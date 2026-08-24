@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenCoderX exploratory agent episode",
+  "type": "object",
+  "required": [
+    "record_type", "study_mode", "agent_session_id", "model", "seed",
+    "episode_index", "task_id", "condition", "signal_category",
+    "initial_correct", "final_code", "final_correct", "evaluator_status", "raw_response",
+    "response_metadata", "usage", "latency_seconds"
+  ],
+  "properties": {
+    "record_type": {"const": "agent_episode"},
+    "study_mode": {"const": "AGENT_EXPLORATORY"},
+    "agent_session_id": {"pattern": "^A[0-9]{3}$"},
+    "model": {"type": "string"},
+    "seed": {"type": "integer"},
+    "episode_index": {"type": "integer", "minimum": 1, "maximum": 12},
+    "task_id": {"type": "string"},
+    "condition": {
+      "enum": ["generic_review", "uncertainty_display", "targeted_guidance"]
+    },
+    "starting_judgment_correct": {"type": ["boolean", "null"]},
+    "starting_confidence": {"type": ["integer", "null"], "minimum": 0, "maximum": 100},
+    "signal_category": {
+      "enum": ["api", "context", "similar_code", "generation", "correct_control"]
+    },
+    "initial_correct": {"type": "boolean"},
+    "final_code": {"type": "string"},
+    "final_correct": {"type": ["boolean", "null"]},
+    "evaluator_status": {"enum": ["ok", "error", "not_scored"]},
+    "raw_response": {"type": "string"},
+    "response_metadata": {"type": "object"},
+    "usage": {"type": "object"},
+    "latency_seconds": {"type": "number", "minimum": 0},
+    "error": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

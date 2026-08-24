@@ -1,0 +1,47 @@
+# RQ3 Gemini configuration for execution-backed OpenCoder evaluation.
+llm:
+  backend: gemini
+  model: gemini-2.5-flash
+  temperature: 0.7
+  max_tokens: 768
+  timeout: 180
+  n_samples_for_uncertainty: 5
+  thinking_budget: 0
+
+embedding:
+  model: microsoft/unixcoder-base
+  device: cpu
+  cache_dir: cache/embeddings
+
+retrieval:
+  api_top_k: 8
+  context_top_k: 8
+  similar_code_top_k: 8
+  fused_top_k: 10
+  knowledge_uncertainty_alpha: 0.5
+  include_test_context: false
+  uncertainty_filter_quantile: 0.7
+
+uncertainty:
+  token_entropy_weight: 0.4
+  self_consistency_weight: 0.4
+  semantic_variance_weight: 0.2
+
+verification:
+  enable_static_checks: true
+  enable_tests: true
+  max_repair_rounds: 2
+  timeout: 30
+
+dataset:
+  name: execrepobench
+  path: input/execrepobench_stable7.jsonl
+
+experiment:
+  benchmark: execrepobench
+  method: opencoder
+  seed: 20260704
+  output_dir: results/rq3/runs/execrepobench_gemini
+  cache_dir: cache/rq3
+
+cache_dir: cache

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "paper_eligible": true,
+  "issues": [],
+  "factorial_backends": 2,
+  "factorial_tasks_per_backend": 10,
+  "factorial_conditions": 8,
+  "exec_uncertainty_model_task_records": 480,
+  "uncertainty_signals": [
+    "api",
+    "context",
+    "similar_code",
+    "generation",
+    "aggregate"
+  ],
+  "crosscodeeval_tasks": 100,
+  "crosscodeeval_languages": 4,
+  "crosscodeeval_functional_execution": false
+}

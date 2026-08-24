@@ -1,0 +1,74 @@
+campaign:
+  name: opencoderx_tosem_v1
+  date_frozen: 2026-08-10
+  gateway: zhizengzeng
+  base_url_env: OPENCODER_LLM_BASE_URL
+  api_key_env: ZHIZENGZENG_API_KEY
+
+models:
+  - family: GPT
+    id: gpt-4o-mini
+    status: EXISTING_VERIFIED_PLUS_MATCHED_RUNS_AS_REQUIRED
+  - family: Gemini
+    id: gemini-2.5-flash
+    status: EXISTING_VERIFIED_PLUS_MATCHED_RUNS_AS_REQUIRED
+  - family: Claude
+    id: claude-sonnet-5
+    status: PILOT_COMPLETED_CONFIRMATORY_NOT_RUN
+  - family: Qwen
+    id: qwen3-coder-plus
+    status: PILOT_COMPLETED_CONFIRMATORY_NOT_RUN
+
+generation:
+  candidate_count: 5
+  temperature: 0.7
+  claude_temperature: null
+  max_output_tokens: 2048
+  max_repair_rounds: 2
+
+cost_controls:
+  enabled: true
+  abort_on_limit: true
+  per_run_limit_usd: 5.0
+  campaign_limit_usd: 80.0
+  per_run_limits:
+    USD: 5.0
+    CNY: 6.0
+  campaign_limits:
+    USD: 80.0
+    CNY: 65.0
+  gateway_input_usd_per_million: null
+  gateway_output_usd_per_million: null
+  gateway_pricing:
+    gpt-4o-mini:
+      currency: USD
+      input_per_million: 0.162
+      output_per_million: 0.648
+      basis: Official listed price plus the gateway's documented 8% foreign-model surcharge.
+      source: https://doc.zhizengzeng.com/doc-3979947
+    gemini-2.5-flash:
+      currency: USD
+      input_per_million: 0.324
+      output_per_million: 2.70
+      basis: Official listed price plus the gateway's documented 8% foreign-model surcharge.
+      source: https://doc.zhizengzeng.com/doc-3979947
+    claude-sonnet-5:
+      currency: USD
+      input_per_million: 2.16
+      output_per_million: 10.80
+      basis: August 2026 listed price plus the gateway's documented 8% foreign-model surcharge.
+      source: https://doc.zhizengzeng.com/doc-3979947
+    qwen3-coder-plus:
+      currency: CNY
+      input_per_million: 4.0
+      output_per_million: 16.0
+      basis: Conservative official-price upper bound; the gateway states domestic models are priced at or below official rates.
+      source: https://doc.zhizengzeng.com/doc-3979947
+  note: Prices are model-specific. Campaign caps were explicitly approved on 2026-08-10 after the frozen measured-cost projection; re-audit prices before main runs because gateway prices may change.
+
+collaboration:
+  review_threshold: 0.35
+  abstain_threshold: 0.70
+  review_budgets: [0.0, 0.05, 0.10, 0.20, 0.30, 0.50, 1.0]
+  reviewer_success: [0.60, 0.75, 0.90, 1.0]
+  seeds: [20260809, 20260810, 20260811, 20260812, 20260813]

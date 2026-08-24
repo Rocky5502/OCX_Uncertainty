@@ -1,0 +1,74 @@
+\subsection{Influence of Retrieved Evidence}
+
+We evaluate all $2^3$ combinations of API knowledge, repository context, and
+similar code on ten execution-backed tasks for each backend. This yields 160
+task--condition runs and 480 test-executed candidate generations. All source
+conditions for a task share the same query decomposition and retrieval intent.
+Table~\ref{tab:source_factorial_effects} reports task-paired marginal effects,
+while Table~\ref{tab:source_interactions} reports difference-in-differences
+interactions.
+
+No individual source exhibits a statistically reliable marginal effect on
+aggregate uncertainty after Holm correction. For GPT, the marginal uncertainty
+effects of API, context, and similar-code evidence are
+0.002,
+0.003, and
+-0.018,
+respectively. The corresponding Gemini effects are
+0.003,
+0.009, and
+-0.010.
+The interaction analysis is more informative: context and similar code have a
+positive GPT Pass@1 interaction of
+33.3
+percentage points ($p_{\mathrm{Holm}}=
+0.032$),
+whereas API and similar-code evidence reduce Gemini uncertainty jointly by
+0.059
+($p_{\mathrm{Holm}}=
+0.032$).
+
+\noindent\textbf{Finding 1.}
+Retrieved evidence does not have a backend-independent additive effect on
+uncertainty. Instead, uncertainty and correctness are shaped by interactions
+among heterogeneous sources, supporting consensus-aware fusion rather than a
+fixed universal source ordering.
+
+\subsection{Uncertainty-Aware Mitigation}
+
+We isolate query decomposition, uncertainty-aware filtering, guided generation,
+verified candidate selection, and repair using six paired configurations per
+task and backend. Table~\ref{tab:uncertainty_component_effectiveness}
+distinguishes raw-sample performance from the final effective output.
+OpenCoder increases effective Pass@1 from
+10.0\% to
+80.0\% for GPT and from
+0.0\% to
+60.0\% for Gemini. The paired gains are
+70.0 points
+(95\% CI [40.0, 100.0];
+exact McNemar $p=0.016$) and
+60.0 points
+(95\% CI [30.0, 90.0];
+exact McNemar $p=0.031$), with 7/0 and
+6/0 improved/regressed task pairs.
+
+The mitigation pathway differs by backend. For GPT, verified selection reaches
+the same 80.0\% effective Pass@1 as the full
+system, and repair does not recover an additional post-selection failure. For
+Gemini, selection succeeds on 14.3\% of
+initial failures and repair succeeds on 33.3\%
+of attempted post-selection failures, raising final Pass@1 to
+60.0\%. Calibration is not uniformly improved:
+ECE changes from 0.162 to
+0.222 for GPT, but from
+0.191 to
+0.153 for Gemini. Failure AUROC for full OpenCoder is
+0.167 and 0.905, respectively.
+
+\noindent\textbf{Finding 2.}
+Uncertainty-aware decomposition, evidence control, verification, and repair
+substantially improve final functional correctness, but raw uncertainty
+calibration remains backend-dependent. OpenCoder is therefore supported as an
+effective mitigation architecture; stronger cross-backend calibration remains
+an explicit limitation rather than a claimed universal property.

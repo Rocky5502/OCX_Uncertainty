@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Four-family effectiveness on ExecRepoBench-120. Pass@$k$ uses exactly five original candidates; Selected is executable correctness after each method's declared selection/repair policy. Values are percentages.}
+\label{tab:four_family_effectiveness}
+\begin{tabular}{llrrrr}
+\toprule
+Model & Method & Pass@1 & Pass@3 & Pass@5 & Selected \\
+\midrule
+GPT-4o-mini & Direct Generation & 15.7 & 18.8 & 20.0 & 16.7 \\
+GPT-4o-mini & Standard RAG & 25.8 & 29.6 & 30.8 & 25.8 \\
+GPT-4o-mini & RAG + Verify/Repair & 24.8 & 29.3 & 30.8 & 32.5 \\
+GPT-4o-mini & OpenCoderX & 23.0 & 25.6 & 26.7 & 30.8 \\
+\midrule
+Gemini 2.5 Flash & Direct Generation & 22.8 & 29.1 & 30.8 & 22.5 \\
+Gemini 2.5 Flash & Standard RAG & 24.0 & 33.5 & 39.2 & 25.8 \\
+Gemini 2.5 Flash & RAG + Verify/Repair & 21.8 & 29.0 & 32.5 & 35.0 \\
+Gemini 2.5 Flash & OpenCoderX & 19.3 & 27.3 & 30.0 & 36.7 \\
+\midrule
+Claude Sonnet 5 & Direct Generation & 51.7 & 58.8 & 61.7 & 51.7 \\
+Claude Sonnet 5 & Standard RAG & 55.8 & 62.7 & 65.0 & 58.3 \\
+Claude Sonnet 5 & RAG + Verify/Repair & 55.0 & 63.3 & 66.7 & 73.3 \\
+Claude Sonnet 5 & OpenCoderX & 55.8 & 62.4 & 65.0 & 74.2 \\
+\midrule
+Qwen3-Coder-Plus & Direct Generation & 47.3 & 52.3 & 54.2 & 48.3 \\
+Qwen3-Coder-Plus & Standard RAG & 53.3 & 55.7 & 55.8 & 53.3 \\
+Qwen3-Coder-Plus & RAG + Verify/Repair & 52.0 & 55.3 & 55.8 & 60.8 \\
+Qwen3-Coder-Plus & OpenCoderX & 49.8 & 53.8 & 55.0 & 60.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencoderx"
+version = "1.0.0"
+description = "Uncertainty-aware repository-level code generation and collaboration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Chandan Kumar Sah"},
+  {name = "Li Zhang"},
+  {name = "Xiaoli Lian"},
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "scikit-learn>=1.3",
+  "pandas>=2.0",
+  "tqdm>=4.65",
+  "PyYAML>=6.0",
+  "requests>=2.31",
+  "tiktoken>=0.5",
+]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.7"]
+embeddings = ["torch>=2.0", "transformers>=4.40", "sentence-transformers>=2.2"]
+datasets = ["datasets>=2.14"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+opencoderx = "opencoder.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "opencoder/tests"]
+
+[tool.setuptools.packages.find]
+include = ["opencoder*", "opencoderx*", "experiments*"]

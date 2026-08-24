@@ -1,0 +1,44 @@
+GATEWAY-MEDIATED AI-AGENT REPLICATION - FINAL VERIFIED RESULTS
+
+Scope
+-----
+Study mode: AGENT_EXPLORATORY
+Design: 12 gateway model configurations x 12 frozen ExecRepoBench tasks
+Planned episodes: 144 (48 per condition)
+Executable outputs: 134
+Missing model outputs: 10
+Evaluator infrastructure errors: 0
+Served-model mismatches: 0
+
+Condition results
+-----------------
+Generic review:       17/44 evaluable correct = 38.6%; E2E = 17/48 = 35.4%
+Uncertainty display:  21/45 evaluable correct = 46.7%; E2E = 21/48 = 43.8%
+Targeted guidance:    16/45 evaluable correct = 35.6%; E2E = 16/48 = 33.3%
+
+Model-clustered contrasts (10,000 bootstrap resamples; seed 20260821)
+------------------------------------------------------------------------
+Uncertainty display - generic review, E2E: +8.3 percentage points,
+95% CI [-2.1, +18.8].
+Targeted guidance - generic review, E2E: -2.1 percentage points,
+95% CI [-12.5, +8.3].
+
+Resource record
+---------------
+Total reported gateway tokens: 599210
+Summed request latency: 4695.1 seconds
+Dollar cost: not reported because comparable verified gateway prices were unavailable.
+
+Interpretation
+--------------
+The uncertainty-only display has the highest descriptive success rate, but its
+clustered interval includes zero. Source-specific targeted guidance does not
+improve aggregate end-to-end success over generic review in this campaign.
+These records are a robustness analysis of gateway-mediated model
+configurations. They are not human-participant evidence and must not be
+described as evaluations of consumer chat products.
+
+Integrity
+---------
+Raw results SHA-256: e1ec042483d870d386979563138dde766307b31b365a80e617b2fd6093603f39
+Artifact valid: true

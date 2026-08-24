@@ -1,0 +1,35 @@
+{
+  "protocol": "gateway_agent_v1",
+  "study_mode": "AGENT_EXPLORATORY",
+  "gateway": "ZhiZengZeng OpenAI-compatible API",
+  "selection_rule": "One text/code-capable model from each of twelve catalog-visible families, selected before outcome generation. A listed alternate may replace a primary only after a documented technical preflight failure.",
+  "unavailable_requested_products": [
+    {
+      "product": "Manus",
+      "reason": "No model ID containing 'manus' in the authenticated 2026-08-21 gateway catalog.",
+      "replacement_family": "GLM"
+    },
+    {
+      "product": "Perplexity",
+      "reason": "No model ID containing 'perplexity' in the authenticated 2026-08-21 gateway catalog.",
+      "replacement_family": "MiniMax"
+    }
+  ],
+  "models": [
+    {"agent_id": "G001", "family": "GPT", "model_id": "gpt-4o-mini", "alternate_model_id": "gpt-4.1-mini", "assignment_group": 1, "temperature": 0.0},
+    {"agent_id": "G002", "family": "Claude", "model_id": "claude-sonnet-5", "alternate_model_id": "claude-sonnet-4-6", "assignment_group": 2, "temperature": null},
+    {"agent_id": "G003", "family": "Gemini", "model_id": "gemini-2.5-flash", "alternate_model_id": "gemini-2.5-flash-lite", "assignment_group": 3, "temperature": 0.0},
+    {"agent_id": "G004", "family": "DeepSeek", "model_id": "deepseek-v3.2", "alternate_model_id": "deepseek-chat", "assignment_group": 1, "temperature": 0.0},
+    {"agent_id": "G005", "family": "Qwen", "model_id": "qwen3-coder-plus", "alternate_model_id": "qwen-coder-plus-latest", "assignment_group": 2, "temperature": 0.0},
+    {"agent_id": "G006", "family": "Kimi", "model_id": "kimi-k2.7-code", "alternate_model_id": "kimi-k2.5", "assignment_group": 3, "temperature": 0.0},
+    {"agent_id": "G007", "family": "Grok", "model_id": "grok-code-fast-1", "alternate_model_id": "grok-4-fast-non-reasoning", "assignment_group": 1, "temperature": 0.0},
+    {"agent_id": "G008", "family": "Llama", "model_id": "llama-4-maverick", "alternate_model_id": "llama-3.3-70b-instruct", "assignment_group": 2, "temperature": 0.0},
+    {"agent_id": "G009", "family": "GLM", "model_id": "glm-5-code", "alternate_model_id": "glm-4.7", "assignment_group": 3, "temperature": 0.0},
+    {"agent_id": "G010", "family": "MiniMax", "model_id": "minimax-m2.5", "alternate_model_id": "minimax-m2.1", "assignment_group": 1, "temperature": 0.0},
+    {"agent_id": "G011", "family": "Doubao", "model_id": "doubao-seed-2-0-code-preview-260215", "alternate_model_id": "doubao-seed-code-preview-251028", "assignment_group": 2, "temperature": 0.0},
+    {"agent_id": "G012", "family": "ERNIE", "model_id": "ernie-4.5-turbo-32k", "alternate_model_id": "ernie-4.0-turbo-128k", "assignment_group": 3, "temperature": 0.0}
+  ],
+  "max_output_tokens": 2048,
+  "episodes_per_model": 12,
+  "warning": "These are gateway-mediated model configurations, not consumer products or human participants."
+}

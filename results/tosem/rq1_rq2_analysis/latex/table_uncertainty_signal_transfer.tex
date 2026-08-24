@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Failure discrimination of source and generation uncertainty on 120 executable tasks per model. CIs use 10,000 task bootstrap resamples. AUPRC should be interpreted relative to each model's failure prevalence.}
+\label{tab:uncertainty_signal_transfer}
+\begin{tabular}{llrrrr}
+\toprule
+Model & Signal & AUROC & 95\% CI & AUPRC & ECE \\
+\midrule
+gpt-4o-mini & API & 0.567 & [0.462, 0.671] & 0.751 & 0.416 \\
+gpt-4o-mini & Context & 0.549 & [0.443, 0.650] & 0.777 & 0.401 \\
+gpt-4o-mini & Similar code & 0.540 & [0.426, 0.650] & 0.727 & 0.413 \\
+gpt-4o-mini & Generation & 0.615 & [0.500, 0.720] & 0.786 & 0.065 \\
+gpt-4o-mini & Aggregate & 0.632 & [0.533, 0.728] & 0.828 & 0.309 \\
+\midrule
+gemini-2.5-flash & API & 0.477 & [0.373, 0.581] & 0.640 & 0.350 \\
+gemini-2.5-flash & Context & 0.529 & [0.423, 0.630] & 0.707 & 0.360 \\
+gemini-2.5-flash & Similar code & 0.511 & [0.403, 0.623] & 0.645 & 0.339 \\
+gemini-2.5-flash & Generation & 0.618 & [0.509, 0.725] & 0.714 & 0.084 \\
+gemini-2.5-flash & Aggregate & 0.602 & [0.497, 0.701] & 0.763 & 0.244 \\
+\midrule
+claude-sonnet-5 & API & 0.547 & [0.427, 0.663] & 0.359 & 0.077 \\
+claude-sonnet-5 & Context & 0.554 & [0.432, 0.678] & 0.357 & 0.163 \\
+claude-sonnet-5 & Similar code & 0.563 & [0.443, 0.683] & 0.316 & 0.061 \\
+claude-sonnet-5 & Generation & 0.745 & [0.646, 0.835] & 0.492 & 0.365 \\
+claude-sonnet-5 & Aggregate & 0.692 & [0.583, 0.795] & 0.489 & 0.135 \\
+\midrule
+qwen3-coder-plus & API & 0.596 & [0.492, 0.697] & 0.511 & 0.132 \\
+qwen3-coder-plus & Context & 0.486 & [0.377, 0.595] & 0.439 & 0.210 \\
+qwen3-coder-plus & Similar code & 0.481 & [0.375, 0.588] & 0.398 & 0.122 \\
+qwen3-coder-plus & Generation & 0.704 & [0.602, 0.800] & 0.619 & 0.225 \\
+qwen3-coder-plus & Aggregate & 0.596 & [0.486, 0.702] & 0.549 & 0.033 \\
+\bottomrule
+\end{tabular}
+\end{table*}

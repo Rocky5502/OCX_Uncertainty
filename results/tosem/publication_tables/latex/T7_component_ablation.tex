@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Retained component analysis on the audited 10-task, three-candidate subset. Effective Pass@1 includes selection and repair where enabled.}
+\label{tab:component_ablation_final}
+\begin{tabular}{llrrrr}
+\toprule
+Backend & Condition & Eff. P@1 & Raw P@1 & Raw P@3 & ECE \\
+\midrule
+GPT & Baseline RAG & 10.0 & 13.3 & 40.0 & 0.162 \\
+GPT & + Decomposition & 50.0 & 43.3 & 50.0 & 0.174 \\
+GPT & + Filtering & 40.0 & 40.0 & 40.0 & 0.167 \\
+GPT & + Guided generation & 50.0 & 50.0 & 70.0 & 0.190 \\
+GPT & + Verified selection & 80.0 & 50.0 & 80.0 & 0.341 \\
+GPT & OpenCoder + repair & 80.0 & 36.7 & 80.0 & 0.222 \\
+GEMINI & Baseline RAG & 0.0 & 13.3 & 40.0 & 0.191 \\
+GEMINI & + Decomposition & 20.0 & 20.0 & 40.0 & 0.193 \\
+GEMINI & + Filtering & 20.0 & 13.3 & 20.0 & 0.315 \\
+GEMINI & + Guided generation & 20.0 & 13.3 & 30.0 & 0.171 \\
+GEMINI & + Verified selection & 20.0 & 13.3 & 20.0 & 0.286 \\
+GEMINI & OpenCoder + repair & 60.0 & 26.7 & 40.0 & 0.153 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,33 @@
+model,method,language,tasks,selected_exact_match,selected_edit_similarity,selected_identifier_f1
+gpt-4o-mini,Direct Generation,python,25,0.16,0.6636,0.5574632034632035
+gpt-4o-mini,Direct Generation,java,25,0.04,0.5851999999999999,0.5152274261686025
+gpt-4o-mini,Direct Generation,typescript,25,0.04,0.5100000000000001,0.4284329004329004
+gpt-4o-mini,Direct Generation,csharp,25,0.0,0.5764,0.25612698412698415
+gpt-4o-mini,Cross-file Context RAG,python,25,0.24,0.754,0.6235755355755357
+gpt-4o-mini,Cross-file Context RAG,java,25,0.16,0.6076,0.5399560308972073
+gpt-4o-mini,Cross-file Context RAG,typescript,25,0.16,0.6308,0.6196891996891998
+gpt-4o-mini,Cross-file Context RAG,csharp,25,0.04,0.6456000000000001,0.4059047619047619
+gemini-2.5-flash,Direct Generation,python,25,0.04,0.544,0.408862914862915
+gemini-2.5-flash,Direct Generation,java,25,0.0,0.49800000000000005,0.412602495543672
+gemini-2.5-flash,Direct Generation,typescript,25,0.12,0.4736000000000001,0.4061904761904762
+gemini-2.5-flash,Direct Generation,csharp,25,0.04,0.4252,0.2674285714285714
+gemini-2.5-flash,Cross-file Context RAG,python,25,0.2,0.5504000000000001,0.4167359307359307
+gemini-2.5-flash,Cross-file Context RAG,java,25,0.04,0.49400000000000005,0.42628571428571427
+gemini-2.5-flash,Cross-file Context RAG,typescript,25,0.12,0.49080000000000007,0.4926629318394024
+gemini-2.5-flash,Cross-file Context RAG,csharp,25,0.04,0.5004,0.378984126984127
+claude-sonnet-5,Direct Generation,python,25,0.32,0.6731999999999999,0.5902363542889857
+claude-sonnet-5,Direct Generation,java,25,0.16,0.5660000000000001,0.4942317551729317
+claude-sonnet-5,Direct Generation,typescript,25,0.12,0.6067999999999999,0.5950125430125429
+claude-sonnet-5,Direct Generation,csharp,25,0.04,0.6192,0.43428571428571433
+claude-sonnet-5,Cross-file Context RAG,python,25,0.28,0.664,0.6166577866577866
+claude-sonnet-5,Cross-file Context RAG,java,25,0.24,0.6128000000000001,0.547565088506265
+claude-sonnet-5,Cross-file Context RAG,typescript,25,0.28,0.6136,0.6013333333333333
+claude-sonnet-5,Cross-file Context RAG,csharp,25,0.28,0.7028,0.6091774891774892
+qwen3-coder-plus,Direct Generation,python,25,0.16,0.5344000000000001,0.4631200564141741
+qwen3-coder-plus,Direct Generation,java,25,0.08,0.6315999999999999,0.5699236319236318
+qwen3-coder-plus,Direct Generation,typescript,25,0.04,0.5375999999999999,0.43899023199023207
+qwen3-coder-plus,Direct Generation,csharp,25,0.0,0.6324000000000001,0.31652969252969254
+qwen3-coder-plus,Cross-file Context RAG,python,25,0.32,0.6607999999999999,0.6071001939237234
+qwen3-coder-plus,Cross-file Context RAG,java,25,0.16,0.652,0.5788644688644687
+qwen3-coder-plus,Cross-file Context RAG,typescript,25,0.12,0.6344,0.5693290043290044
+qwen3-coder-plus,Cross-file Context RAG,csharp,25,0.08,0.6896000000000001,0.5268154068154068

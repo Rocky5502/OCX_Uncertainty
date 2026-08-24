@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED",
+  "models": [
+    "gpt-4o-mini",
+    "gemini-2.5-flash",
+    "claude-sonnet-5",
+    "qwen3-coder-plus"
+  ],
+  "workers": 2,
+  "crosscodeeval_spend": {
+    "USD": 4.37945049,
+    "CNY": 4.837484
+  },
+  "campaign_spend": {
+    "CNY": 56.53726400000001,
+    "USD": 72.12985891200003
+  },
+  "failures": []
+}

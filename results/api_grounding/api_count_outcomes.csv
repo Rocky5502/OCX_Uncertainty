@@ -1,0 +1,37 @@
+benchmark,backend,method,n,over,exact,under
+CoderEval,GPT,API-informed reference,19,0.0,1.0,0.0
+CoderEval,GPT,Baseline RAG,19,1.0,0.0,0.0
+CoderEval,GPT,ContextOnly,19,0.0,0.3157894736842105,0.6842105263157895
+CoderEval,GPT,OpenCoder,19,0.8947368421052632,0.10526315789473684,0.0
+CoderEval,GPT,OpenCoder-NoAPIRefine,19,0.9473684210526315,0.05263157894736842,0.0
+CoderEval,GPT,OpenCoder-NoUncFilter,19,1.0,0.0,0.0
+CoderEval,Gemini,API-informed reference,19,0.0,1.0,0.0
+CoderEval,Gemini,Baseline RAG,19,1.0,0.0,0.0
+CoderEval,Gemini,ContextOnly,19,0.0,0.3157894736842105,0.6842105263157895
+CoderEval,Gemini,OpenCoder,19,0.8947368421052632,0.10526315789473684,0.0
+CoderEval,Gemini,OpenCoder-NoAPIRefine,19,1.0,0.0,0.0
+CoderEval,Gemini,OpenCoder-NoUncFilter,19,1.0,0.0,0.0
+ExecRepoBench,GPT,API-informed reference,10,0.0,1.0,0.0
+ExecRepoBench,GPT,Baseline RAG,10,0.5,0.5,0.0
+ExecRepoBench,GPT,ContextOnly,10,0.0,1.0,0.0
+ExecRepoBench,GPT,OpenCoder,10,0.5,0.5,0.0
+ExecRepoBench,GPT,OpenCoder-NoAPIRefine,10,0.5,0.5,0.0
+ExecRepoBench,GPT,OpenCoder-NoUncFilter,10,0.5,0.5,0.0
+ExecRepoBench,Gemini,API-informed reference,10,0.0,1.0,0.0
+ExecRepoBench,Gemini,Baseline RAG,10,0.5,0.5,0.0
+ExecRepoBench,Gemini,ContextOnly,10,0.0,1.0,0.0
+ExecRepoBench,Gemini,OpenCoder,10,0.5,0.5,0.0
+ExecRepoBench,Gemini,OpenCoder-NoAPIRefine,10,0.5,0.5,0.0
+ExecRepoBench,Gemini,OpenCoder-NoUncFilter,10,0.5,0.5,0.0
+RepoExec,GPT,API-informed reference,14,0.0,1.0,0.0
+RepoExec,GPT,Baseline RAG,14,1.0,0.0,0.0
+RepoExec,GPT,ContextOnly,14,0.0,0.07142857142857142,0.9285714285714286
+RepoExec,GPT,OpenCoder,14,0.0,1.0,0.0
+RepoExec,GPT,OpenCoder-NoAPIRefine,14,1.0,0.0,0.0
+RepoExec,GPT,OpenCoder-NoUncFilter,14,1.0,0.0,0.0
+RepoExec,Gemini,API-informed reference,14,0.0,1.0,0.0
+RepoExec,Gemini,Baseline RAG,14,1.0,0.0,0.0
+RepoExec,Gemini,ContextOnly,14,0.0,0.07142857142857142,0.9285714285714286
+RepoExec,Gemini,OpenCoder,14,0.0,0.9285714285714286,0.07142857142857142
+RepoExec,Gemini,OpenCoder-NoAPIRefine,14,0.9285714285714286,0.07142857142857142,0.0
+RepoExec,Gemini,OpenCoder-NoUncFilter,14,1.0,0.0,0.0

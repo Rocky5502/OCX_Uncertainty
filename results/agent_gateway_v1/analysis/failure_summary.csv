@@ -1,0 +1,16 @@
+agent_id,family,status_category,episodes
+G001,GPT,evaluable,12
+G002,Claude,evaluable,12
+G003,Gemini,evaluable,10
+G003,Gemini,output_budget_truncation,2
+G004,DeepSeek,evaluable,7
+G004,DeepSeek,output_budget_truncation,5
+G005,Qwen,evaluable,12
+G006,Kimi,api_or_transport_error,3
+G006,Kimi,evaluable,9
+G007,Grok,evaluable,12
+G008,Llama,evaluable,12
+G009,GLM,evaluable,12
+G010,MiniMax,evaluable,12
+G011,Doubao,evaluable,12
+G012,ERNIE,evaluable,12

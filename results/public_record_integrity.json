@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "automated_reviewer_episodes": 144,
+    "crosscodeeval_tasks": 100,
+    "execrepobench_tasks": 120,
+    "rq1_gemini_metric_records": 80,
+    "rq1_gpt_metric_records": 80,
+    "rq2_gemini_metric_records": 60,
+    "rq2_gpt_metric_records": 60
+  },
+  "redactions": [
+    "third-party repository source and reference implementations",
+    "generated code and raw provider responses",
+    "provider response identifiers and evaluator logs",
+    "local filesystem paths and credentials"
+  ],
+  "sha256": {
+    "data/manifests/crosscodeeval_100_public.jsonl": "1961fdb810068b25f85a5876f49e1738b27e649b7159673d97616987fac92957",
+    "data/manifests/execrepobench_120_public.jsonl": "f2223302b7b15e5b4a8311f85225a8a1c07c7ab322a7f1267de4c4102eca24b0",
+    "data/manifests/task_catalog.csv": "112adb1f13b88ae70da928bfc029ea897619db2a4b57c066b894adc38c5401e9",
+    "results/agent_gateway_v1/raw_results_public.jsonl": "e1ec042483d870d386979563138dde766307b31b365a80e617b2fd6093603f39",
+    "results/rq12_corrected_10/gemini/rq1.json": "660873bd6213c77a383947a09f5547824ed8a1fd6e4d8bd94f4b83ab5abcb09b",
+    "results/rq12_corrected_10/gemini/rq2.json": "2d90619b0c777b9eddff3be7d015bab90ae3e28054f58f9a440caacf067ac198",
+    "results/rq12_corrected_10/gpt/rq1.json": "14a4aebe0b3a6c6e36f9eb0cd573c5a8e04093a46398178e1f9ebce1438c0197",
+    "results/rq12_corrected_10/gpt/rq2.json": "e7ee823626c317106e0b5a97e03d0be6aaa08a743f42ca4e4cf62e71a6a0806a"
+  },
+  "status": "PUBLIC_RECORDS_CREATED"
+}

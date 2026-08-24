@@ -1,0 +1,10 @@
+{
+  "decision_at_utc": "2026-08-21T08:02:39.041468+00:00",
+  "agent_id": "G002",
+  "family": "Claude",
+  "superseded_model_id": "claude-sonnet-5",
+  "replacement_model_id": "claude-sonnet-4-6",
+  "outcome_observed_before_replacement": false,
+  "superseded_record": "results/agent_gateway_v1/superseded_format_pilot.jsonl",
+  "reason": "Primary claude-sonnet-5 exhausted the fixed output budget with finish_reason=length and returned zero visible text; no correctness outcome existed."
+}

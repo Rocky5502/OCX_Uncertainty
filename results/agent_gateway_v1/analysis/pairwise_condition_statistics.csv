@@ -1,0 +1,7 @@
+intervention,comparator,estimand,model_clusters,absolute_difference,bootstrap_ci95_low,bootstrap_ci95_high
+uncertainty_display,generic_review,evaluable_correctness,12,0.08030303030303032,-0.030917874396135248,0.21431998556998513
+uncertainty_display,generic_review,end_to_end_success,12,0.08333333333333331,-0.020833333333333315,0.1875
+targeted_guidance,generic_review,evaluable_correctness,12,-0.030808080808080784,-0.13810753105590062,0.09664544112218522
+targeted_guidance,generic_review,end_to_end_success,12,-0.02083333333333337,-0.125,0.08333333333333337
+targeted_guidance,uncertainty_display,evaluable_correctness,12,-0.1111111111111111,-0.25398549194224174,0.047737231739891174
+targeted_guidance,uncertainty_display,end_to_end_success,12,-0.10416666666666669,-0.20833333333333337,0.0

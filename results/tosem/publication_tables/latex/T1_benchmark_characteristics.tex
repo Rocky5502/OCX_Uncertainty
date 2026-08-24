@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Benchmark scope and evaluation status. CrossCodeEval uses native non-executable metrics; Multi-SWE-bench is excluded from quantitative claims because the official Docker evaluator was unavailable.}
+\label{tab:benchmark_characteristics}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrlll}
+\toprule
+Benchmark & Tasks & Repositories & Languages & Endpoint & Status \\
+\midrule
+RepoExec-inline & 32 & multiple & Python & executable tests & Retained \\
+CoderEval API subset & 13 & multiple & Python/Java & API-set quality & Retained \\
+ExecRepoBench-120 & 120 & 37 & Python & executable tests & Completed \\
+CrossCodeEval-100 & 100 & 88 & Python/Java/TypeScript/C\# & native EM/edit/identifier F1 & Completed (native) \\
+Multi-SWE-bench-Flash-35 & 35 & -- & multilingual & official container tests & Blocked (no Docker) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}

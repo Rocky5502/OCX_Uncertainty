@@ -1,0 +1,13 @@
+signal_category,condition,planned_repair_opportunities,evaluable_repair_opportunities,repairs,repair_success_evaluable,repair_success_operational
+api,generic_review,8,8,0,0.0,0.0
+api,uncertainty_display,8,7,0,0.0,0.0
+api,targeted_guidance,8,7,0,0.0,0.0
+context,generic_review,8,7,1,0.14285714285714285,0.125
+context,uncertainty_display,8,8,4,0.5,0.5
+context,targeted_guidance,8,8,2,0.25,0.25
+similar_code,generic_review,8,7,0,0.0,0.0
+similar_code,uncertainty_display,8,6,0,0.0,0.0
+similar_code,targeted_guidance,8,7,0,0.0,0.0
+generation,generic_review,8,6,2,0.3333333333333333,0.25
+generation,uncertainty_display,8,8,4,0.5,0.5
+generation,targeted_guidance,8,7,4,0.5714285714285714,0.5

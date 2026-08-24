@@ -1,0 +1,35 @@
+# OpenCoder default configuration
+llm:
+  backend: openai            # offline | openai/chatgpt | gemini | zhizengzeng
+  model: gpt-4o-mini
+  temperature: 0.2
+  max_tokens: 1024
+  n_samples_for_uncertainty: 5
+
+embedding:
+  model: microsoft/unixcoder-base
+  device: cpu                # cpu | cuda
+  cache_dir: cache/embeddings
+
+retrieval:
+  api_top_k: 10
+  context_top_k: 10
+  similar_code_top_k: 10
+  fused_top_k: 12
+  knowledge_uncertainty_alpha: 0.5
+  include_test_context: false
+  uncertainty_filter_quantile: 0.7   # keep candidates with score in top 70%
+
+uncertainty:
+  token_entropy_weight: 0.4
+  self_consistency_weight: 0.4
+  semantic_variance_weight: 0.2
+
+verification:
+  enable_static_checks: true
+  enable_tests: true
+  max_repair_rounds: 2
+
+dataset:
+  name: execrepobench
+  path: input/execrepobench_data.jsonl

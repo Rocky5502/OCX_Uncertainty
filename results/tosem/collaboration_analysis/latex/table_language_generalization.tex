@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{CrossCodeEval-100 context effect by language. Exact match is a native non-executable metric and must not be interpreted as functional correctness.}
+\label{tab:language_generalization}
+\begin{tabular}{llrrrr}
+\toprule
+Model & Language & Direct EM & Context EM & $\Delta$ & 95\% CI \\
+\midrule
+gpt-4o-mini & Python & 16.0 & 24.0 & +8.0 & [0.0, 20.0] \\
+gpt-4o-mini & Java & 4.0 & 16.0 & +12.0 & [0.0, 24.0] \\
+gpt-4o-mini & Typescript & 4.0 & 16.0 & +12.0 & [0.0, 24.0] \\
+gpt-4o-mini & Csharp & 0.0 & 4.0 & +4.0 & [0.0, 12.0] \\
+gemini-2.5-flash & Python & 4.0 & 20.0 & +16.0 & [4.0, 32.0] \\
+gemini-2.5-flash & Java & 0.0 & 4.0 & +4.0 & [0.0, 12.0] \\
+gemini-2.5-flash & Typescript & 12.0 & 12.0 & +0.0 & [-16.0, 16.0] \\
+gemini-2.5-flash & Csharp & 4.0 & 4.0 & +0.0 & [-12.0, 12.0] \\
+claude-sonnet-5 & Python & 32.0 & 28.0 & -4.0 & [-12.0, 0.0] \\
+claude-sonnet-5 & Java & 16.0 & 24.0 & +8.0 & [-12.0, 28.0] \\
+claude-sonnet-5 & Typescript & 12.0 & 28.0 & +16.0 & [4.0, 32.0] \\
+claude-sonnet-5 & Csharp & 4.0 & 28.0 & +24.0 & [8.0, 40.0] \\
+qwen3-coder-plus & Python & 16.0 & 32.0 & +16.0 & [4.0, 32.0] \\
+qwen3-coder-plus & Java & 8.0 & 16.0 & +8.0 & [0.0, 20.0] \\
+qwen3-coder-plus & Typescript & 4.0 & 12.0 & +8.0 & [-8.0, 24.0] \\
+qwen3-coder-plus & Csharp & 0.0 & 8.0 & +8.0 & [0.0, 20.0] \\
+\bottomrule
+\end{tabular}
+\end{table*}

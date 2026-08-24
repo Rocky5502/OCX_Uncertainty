@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "paper_eligible": true,
+  "tasks": 100,
+  "models": 4,
+  "methods": 2,
+  "task_method_model_cells": 800,
+  "raw_result_files": 16,
+  "unique_provider_responses": 3200,
+  "functional_execution": false,
+  "issues": []
+}

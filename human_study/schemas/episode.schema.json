@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenCoderX human-study episode record",
+  "type": "object",
+  "required": [
+    "record_type", "study_mode", "participant_code", "episode_index",
+    "task_id", "condition", "assignment_group", "starting_code_sha256",
+    "starting_judgment_correct", "starting_confidence", "final_code",
+    "final_confidence", "difficulty", "guidance_usefulness", "action_category",
+    "started_at_utc", "submitted_at_utc", "elapsed_seconds"
+  ],
+  "properties": {
+    "record_type": {"const": "episode"},
+    "study_mode": {"enum": ["EMPIRICAL", "SIMULATED_DRY_RUN"]},
+    "participant_code": {"pattern": "^H[0-9]{3}$"},
+    "episode_index": {"type": "integer", "minimum": 1, "maximum": 12},
+    "task_id": {"type": "string"},
+    "condition": {
+      "enum": ["generic_review", "uncertainty_display", "targeted_guidance"]
+    },
+    "assignment_group": {"type": "integer", "minimum": 1, "maximum": 3},
+    "starting_code_sha256": {"pattern": "^[0-9a-f]{64}$"},
+    "starting_judgment_correct": {"type": "boolean"},
+    "starting_confidence": {"type": "integer", "minimum": 0, "maximum": 100},
+    "final_code": {"type": "string", "minLength": 1},
+    "final_confidence": {"type": "integer", "minimum": 0, "maximum": 100},
+    "difficulty": {"type": "integer", "minimum": 1, "maximum": 5},
+    "guidance_usefulness": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+    "action_category": {
+      "enum": [
+        "accepted", "edited_api", "used_context", "rejected_similar_code",
+        "changed_logic", "other"
+      ]
+    },
+    "started_at_utc": {"type": "string"},
+    "submitted_at_utc": {"type": "string"},
+    "elapsed_seconds": {"type": "number", "minimum": 0, "maximum": 720},
+    "client_notes": {"type": "string", "maxLength": 1000}
+  },
+  "additionalProperties": false
+}

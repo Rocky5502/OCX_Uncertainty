@@ -1,0 +1,17 @@
+model,method,tasks,repair_attempted_tasks,repair_attempt_rate,repair_success_tasks,repair_success_rate_given_attempt,mean_rounds_given_attempt
+gpt-4o-mini,Direct Generation,120,0,0.0,0,,
+gpt-4o-mini,Standard RAG,120,0,0.0,0,,
+gpt-4o-mini,RAG + Verify/Repair,120,83,0.6916666666666667,2,0.024096385542168676,1.9759036144578312
+gpt-4o-mini,OpenCoderX,120,88,0.7333333333333333,5,0.056818181818181816,1.9545454545454546
+gemini-2.5-flash,Direct Generation,120,0,0.0,0,,
+gemini-2.5-flash,Standard RAG,120,0,0.0,0,,
+gemini-2.5-flash,RAG + Verify/Repair,120,81,0.675,3,0.037037037037037035,1.962962962962963
+gemini-2.5-flash,OpenCoderX,120,84,0.7,8,0.09523809523809523,1.9404761904761905
+claude-sonnet-5,Direct Generation,120,0,0.0,0,,
+claude-sonnet-5,Standard RAG,120,0,0.0,0,,
+claude-sonnet-5,RAG + Verify/Repair,120,40,0.3333333333333333,8,0.2,1.825
+claude-sonnet-5,OpenCoderX,120,42,0.35,11,0.2619047619047619,1.7380952380952381
+qwen3-coder-plus,Direct Generation,120,0,0.0,0,,
+qwen3-coder-plus,Standard RAG,120,0,0.0,0,,
+qwen3-coder-plus,RAG + Verify/Repair,120,53,0.44166666666666665,6,0.11320754716981132,1.9433962264150944
+qwen3-coder-plus,OpenCoderX,120,54,0.45,6,0.1111111111111111,1.9259259259259258

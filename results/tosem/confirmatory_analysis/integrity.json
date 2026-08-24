@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "paper_eligible": true,
+  "task_count": 120,
+  "model_count": 4,
+  "method_count": 4,
+  "task_method_model_cells": 1920,
+  "raw_batch_files": 192,
+  "audited_provider_responses": 19589,
+  "duplicate_provider_response_ids": 0,
+  "repair_prompt_calls": 1011,
+  "length_limited_candidates_scored_as_failures": 1520,
+  "retrieval_index_documents": 13804,
+  "retrieval_leakage_failures": 0,
+  "confirmatory_result_cost_only": {
+    "USD": 57.338380332000014,
+    "CNY": 45.864324
+  },
+  "campaign_spend_including_pilots_and_superseded_runs": {
+    "USD": 67.75040842200004,
+    "CNY": 51.69978000000001
+  },
+  "issues": [],
+  "warnings": []
+}

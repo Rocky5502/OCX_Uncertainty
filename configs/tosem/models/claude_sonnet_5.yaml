@@ -1,0 +1,31 @@
+llm:
+  backend: zhizengzeng
+  model: claude-sonnet-5
+  temperature: null
+  max_tokens: 2048
+  timeout: 180
+  n_samples_for_uncertainty: 5
+embedding:
+  model: microsoft/unixcoder-base
+  device: cpu
+retrieval:
+  api_top_k: 8
+  context_top_k: 8
+  similar_code_top_k: 8
+  fused_top_k: 10
+  knowledge_uncertainty_alpha: 0.5
+  uncertainty_filter_quantile: 0.7
+  include_test_context: false
+uncertainty:
+  token_entropy_weight: 0.4
+  self_consistency_weight: 0.4
+  semantic_variance_weight: 0.2
+verification:
+  max_repair_rounds: 2
+dataset:
+  name: execrepobench
+  path: data/manifests/execrepobench_opencoderx_120_v1.jsonl
+experiment:
+  seed: 20260809
+  output_dir: results/tosem/smoke/claude_sonnet_5
+cache_dir: cache/tosem

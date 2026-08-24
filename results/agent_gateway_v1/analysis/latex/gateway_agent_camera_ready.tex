@@ -1,0 +1,37 @@
+% Exploratory AI-agent evidence; do not describe as a human study.
+\subsection{Exploratory Multi-Model Agent Replication}
+\label{sec:gateway-agent-replication}
+
+We examined whether OpenCoder's uncertainty presentation also changes the
+behavior of automated code reviewers. Twelve gateway-mediated model
+configurations each reviewed the same 12 frozen ExecRepoBench outputs under a
+counterbalanced design, yielding 144 planned episodes (48 per condition). The
+models received no tools, test outcomes, or conversational history, and every
+returned function was evaluated with the same private executable tests. This
+analysis is exploratory: gateway models are neither human participants nor
+equivalent to the corresponding consumer chat products.
+
+Across the final campaign, 134/144
+episodes produced executable outputs. Generic review achieved
+38.6\% correctness among evaluable
+outputs, compared with 46.7\% for the
+uncertainty display and 35.6\% for
+targeted guidance. When model-side non-response is retained in the planned
+denominator, the corresponding end-to-end success rates were
+35.4\%,
+43.8\%, and
+33.3\%. Relative to generic review,
+targeted guidance changed end-to-end success by
+-2.1 percentage points (model-clustered
+95\% bootstrap CI [-12.5,
++8.3]); the uncertainty-only
+display changed it by +8.3 points
+([-2.1,
++18.8]). These intervals are
+descriptive sensitivity estimates over the twelve configured systems, not
+population-level inference over all LLMs.
+
+\noindent\textbf{Finding.}
+The multi-model replication does not show a positive aggregate benefit from source-specific guidance. The result supports treating
+AI-agent evidence as a robustness check while keeping human usability and
+developer effectiveness as separate empirical questions.

@@ -1,0 +1,4 @@
+# Optional analysis dependency for episode-level GEE sensitivity analysis.
+statsmodels>=0.14,<0.15
+# Runtime validation for participant and agent record contracts.
+jsonschema>=4.23,<5

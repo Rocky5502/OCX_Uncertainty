@@ -1,0 +1,4166 @@
+{
+  "decomposition": [
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/1",
+      "index_latency_s": 0.2252535830193665,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "a1c3a82100d0dec6a8218dfd09d962c3be6ebff5002d79eb8b972a6a63ccbd5c",
+      "repair_rounds": 0,
+      "run_latency_s": 6.087600040977122,
+      "sample_correctness": [
+        true,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4687075398862362,
+          "mean_top_retrieval_score": 0.520418930053711,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.31241545639932156,
+          "mean_top_retrieval_score": 0.4014278590679169,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17875614669173956,
+          "mean_top_retrieval_score": 0.23827196657657623,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6441292186578116,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5539794266223907,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5539794266223907,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/2",
+      "index_latency_s": 0.22498387499945238,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "55284468fbea42460185b8b4fabc8b8658c348e73fbf20c864e765062013237a",
+      "repair_rounds": 0,
+      "run_latency_s": 6.954305416991701,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.46205701927344006,
+          "mean_top_retrieval_score": 0.5107898016770681,
+          "n_kept": 24,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2851383077601592,
+          "mean_top_retrieval_score": 0.3631124297777812,
+          "n_kept": 24,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1852568043395877,
+          "mean_top_retrieval_score": 0.24899891515572867,
+          "n_kept": 24,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.400000011920929,
+        "self_consistency": 0.0,
+        "semantic_variance": 5.960464477539063e-08,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.0,
+        "semantic_variance": 5.960464477539063e-08,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/3",
+      "index_latency_s": 0.22045162500580773,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "516986bb85c8c6961511e8e82e2d725e51102a8d3ea1898d686b40c1714cc8fb",
+      "repair_rounds": 0,
+      "run_latency_s": 6.89099816599628,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4577611982822418,
+          "mean_top_retrieval_score": 0.5013815263907114,
+          "n_kept": 24,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.3159841454277436,
+          "mean_top_retrieval_score": 0.43068820238113403,
+          "n_kept": 24,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17794620928665003,
+          "mean_top_retrieval_score": 0.28803926706314087,
+          "n_kept": 24,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7764798144499462,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5490657389163971,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5490657389163971,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/0",
+      "index_latency_s": 0.020781250001164153,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "0467c6affaddccf94b156bebf3e9815aecec1ff470dd0be6b6a1e7a779639bbd",
+      "repair_rounds": 0,
+      "run_latency_s": 3.716836917010369,
+      "sample_correctness": [
+        true,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37828705832362175,
+          "mean_top_retrieval_score": 0.4260803461074829,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.18250955939292907,
+          "mean_top_retrieval_score": 0.28489538431167605,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.24567012824118137,
+          "mean_top_retrieval_score": 0.3200089693069458,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7065274516741435,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.19930392503738403,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.19930392503738403,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/2",
+      "index_latency_s": 0.02469470800133422,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "9b6cc205d4a855ab9929f6e8f5a8d57ccb38ce835d084a0f5802538ada3df4e3",
+      "repair_rounds": 0,
+      "run_latency_s": 7.849162917002104,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37036933228373525,
+          "mean_top_retrieval_score": 0.424647319316864,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2554499603807926,
+          "mean_top_retrieval_score": 0.3836184561252594,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23070034347474574,
+          "mean_top_retrieval_score": 0.2849092483520508,
+          "n_kept": 40,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7155330936113994,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.24433213472366333,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.24433213472366333,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/0",
+      "index_latency_s": 0.0028068340034224093,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "988774efe5c116c0fb13e413b10126af3021f1f444bbd900e9c5a4add5a245d1",
+      "repair_rounds": 0,
+      "run_latency_s": 2.5048823749821167,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16500315864880882,
+          "mean_top_retrieval_score": 0.2846890568733215,
+          "n_kept": 15,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6814287702242534,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.07381051778793335,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.07381051778793335,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/1",
+      "index_latency_s": 0.001979209017008543,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "6177f3f5a056fa9f98074788332771ca91b2aeb1bc572267e76bf93bf17c3e46",
+      "repair_rounds": 0,
+      "run_latency_s": 4.320211499987636,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1511899899277422,
+          "mean_top_retrieval_score": 0.25510132561127347,
+          "n_kept": 18,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7018412748972576,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1758730411529541,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1758730411529541,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/2",
+      "index_latency_s": 0.001697166997473687,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "1106066bfe6813aca0bf63eb9d9f66d278f3460f93524748e116b01b8865d7d2",
+      "repair_rounds": 0,
+      "run_latency_s": 6.843421082972782,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14333882141444418,
+          "mean_top_retrieval_score": 0.24567721039056778,
+          "n_kept": 18,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7227235356966655,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2802843451499939,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2802843451499939,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/3",
+      "index_latency_s": 0.0017575419915374368,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "83493dac70551ef3fccaf26b888b7d65fb700c838026e53e82a1a96e667da64f",
+      "repair_rounds": 0,
+      "run_latency_s": 3.8385159999888856,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1186751013000806,
+          "mean_top_retrieval_score": 0.23656299710273743,
+          "n_kept": 15,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6703578511873882,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.018455922603607178,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.018455922603607178,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/4",
+      "index_latency_s": 0.0015487080090679228,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "8da8889f9201496ef151629faa753adb485f4a35bf146440377432832189b08c",
+      "repair_rounds": 0,
+      "run_latency_s": 3.276243083004374,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12278247748812038,
+          "mean_top_retrieval_score": 0.227202740808328,
+          "n_kept": 18,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7142267028490703,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.23780018091201782,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.23780018091201782,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    }
+  ],
+  "filtering": [
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/1",
+      "index_latency_s": 0.2252535830193665,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "a1c3a82100d0dec6a8218dfd09d962c3be6ebff5002d79eb8b972a6a63ccbd5c",
+      "repair_rounds": 0,
+      "run_latency_s": 7.061709500005236,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4687075398862362,
+          "mean_top_retrieval_score": 0.520418930053711,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.31241545639932156,
+          "mean_top_retrieval_score": 0.4014278590679169,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17875614669173956,
+          "mean_top_retrieval_score": 0.23827196657657623,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6245029648145041,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.45584815740585327,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.45584815740585327,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/2",
+      "index_latency_s": 0.22498387499945238,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "55284468fbea42460185b8b4fabc8b8658c348e73fbf20c864e765062013237a",
+      "repair_rounds": 0,
+      "run_latency_s": 7.082187374995556,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.46205701927344006,
+          "mean_top_retrieval_score": 0.5107898016770681,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2851383077601592,
+          "mean_top_retrieval_score": 0.3631124297777812,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1852568043395877,
+          "mean_top_retrieval_score": 0.24899891515572867,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7911696354548137,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6225148439407349,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6225148439407349,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/3",
+      "index_latency_s": 0.22045162500580773,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "516986bb85c8c6961511e8e82e2d725e51102a8d3ea1898d686b40c1714cc8fb",
+      "repair_rounds": 0,
+      "run_latency_s": 3.280715583008714,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4577611982822418,
+          "mean_top_retrieval_score": 0.5013815263907114,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.3159841454277436,
+          "mean_top_retrieval_score": 0.43068820238113403,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17794620928665003,
+          "mean_top_retrieval_score": 0.28803926706314087,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7851344744364421,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.592339038848877,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.592339038848877,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/0",
+      "index_latency_s": 0.020781250001164153,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "0467c6affaddccf94b156bebf3e9815aecec1ff470dd0be6b6a1e7a779639bbd",
+      "repair_rounds": 0,
+      "run_latency_s": 2.9264407079899684,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37828705832362175,
+          "mean_top_retrieval_score": 0.4260803461074829,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.18250955939292907,
+          "mean_top_retrieval_score": 0.28489538431167605,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.24567012824118137,
+          "mean_top_retrieval_score": 0.3200089693069458,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.686383883158366,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.0985860824584961,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.0985860824584961,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/2",
+      "index_latency_s": 0.02469470800133422,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "9b6cc205d4a855ab9929f6e8f5a8d57ccb38ce835d084a0f5802538ada3df4e3",
+      "repair_rounds": 0,
+      "run_latency_s": 6.92666083300719,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37036933228373525,
+          "mean_top_retrieval_score": 0.424647319316864,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2554499603807926,
+          "mean_top_retrieval_score": 0.3836184561252594,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23070034347474574,
+          "mean_top_retrieval_score": 0.2849092483520508,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.5840601881345114,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.2536342740058899,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.2536342740058899,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/0",
+      "index_latency_s": 0.0028068340034224093,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "988774efe5c116c0fb13e413b10126af3021f1f444bbd900e9c5a4add5a245d1",
+      "repair_rounds": 0,
+      "run_latency_s": 3.47871662498801,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16500315864880882,
+          "mean_top_retrieval_score": 0.2846890568733215,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6973925391832988,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1536293625831604,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1536293625831604,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/1",
+      "index_latency_s": 0.001979209017008543,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "6177f3f5a056fa9f98074788332771ca91b2aeb1bc572267e76bf93bf17c3e46",
+      "repair_rounds": 0,
+      "run_latency_s": 4.825424541981192,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1511899899277422,
+          "mean_top_retrieval_score": 0.25510132561127347,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7459904948870342,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.39661914110183716,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.39661914110183716,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/2",
+      "index_latency_s": 0.001697166997473687,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "1106066bfe6813aca0bf63eb9d9f66d278f3460f93524748e116b01b8865d7d2",
+      "repair_rounds": 0,
+      "run_latency_s": 7.021055542019894,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14333882141444418,
+          "mean_top_retrieval_score": 0.24567721039056778,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7487603465716045,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4104683995246887,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4104683995246887,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/3",
+      "index_latency_s": 0.0017575419915374368,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "83493dac70551ef3fccaf26b888b7d65fb700c838026e53e82a1a96e667da64f",
+      "repair_rounds": 0,
+      "run_latency_s": 4.189262667001458,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1186751013000806,
+          "mean_top_retrieval_score": 0.23656299710273743,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7206855098406475,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.27009421586990356,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.27009421586990356,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/4",
+      "index_latency_s": 0.003087874996708706,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "8da8889f9201496ef151629faa753adb485f4a35bf146440377432832189b08c",
+      "repair_rounds": 0,
+      "run_latency_s": 4.058833999995841,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12278247748812038,
+          "mean_top_retrieval_score": 0.227202740808328,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.6950416723887126,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1418750286102295,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1418750286102295,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    }
+  ],
+  "guidance": [
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/1",
+      "index_latency_s": 0.2252535830193665,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "a1c3a82100d0dec6a8218dfd09d962c3be6ebff5002d79eb8b972a6a63ccbd5c",
+      "repair_rounds": 0,
+      "run_latency_s": 9.520705916016595,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4687075398862362,
+          "mean_top_retrieval_score": 0.520418930053711,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.31241545639932156,
+          "mean_top_retrieval_score": 0.4014278590679169,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17875614669173956,
+          "mean_top_retrieval_score": 0.23827196657657623,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6474216600259146,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5704416334629059,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5704416334629059,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/2",
+      "index_latency_s": 0.22498387499945238,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "55284468fbea42460185b8b4fabc8b8658c348e73fbf20c864e765062013237a",
+      "repair_rounds": 0,
+      "run_latency_s": 6.851711625000462,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.46205701927344006,
+          "mean_top_retrieval_score": 0.5107898016770681,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2851383077601592,
+          "mean_top_retrieval_score": 0.3631124297777812,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1852568043395877,
+          "mean_top_retrieval_score": 0.24899891515572867,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.6245029648145041,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.45584815740585327,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.45584815740585327,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/3",
+      "index_latency_s": 0.22045162500580773,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "516986bb85c8c6961511e8e82e2d725e51102a8d3ea1898d686b40c1714cc8fb",
+      "repair_rounds": 0,
+      "run_latency_s": 7.774420333997114,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4577611982822418,
+          "mean_top_retrieval_score": 0.5013815263907114,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.3159841454277436,
+          "mean_top_retrieval_score": 0.43068820238113403,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17794620928665003,
+          "mean_top_retrieval_score": 0.28803926706314087,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.6382399102052054,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5245328843593597,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5245328843593597,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/0",
+      "index_latency_s": 0.020781250001164153,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "0467c6affaddccf94b156bebf3e9815aecec1ff470dd0be6b6a1e7a779639bbd",
+      "repair_rounds": 0,
+      "run_latency_s": 4.054736291000154,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37828705832362175,
+          "mean_top_retrieval_score": 0.4260803461074829,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.18250955939292907,
+          "mean_top_retrieval_score": 0.28489538431167605,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.24567012824118137,
+          "mean_top_retrieval_score": 0.3200089693069458,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7327995578447979,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3306644558906555,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3306644558906555,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/2",
+      "index_latency_s": 0.02469470800133422,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "9b6cc205d4a855ab9929f6e8f5a8d57ccb38ce835d084a0f5802538ada3df4e3",
+      "repair_rounds": 0,
+      "run_latency_s": 7.642343915998936,
+      "sample_correctness": [
+        true,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37036933228373525,
+          "mean_top_retrieval_score": 0.424647319316864,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2554499603807926,
+          "mean_top_retrieval_score": 0.3836184561252594,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23070034347474574,
+          "mean_top_retrieval_score": 0.2849092483520508,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7271302382151287,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.30231785774230957,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.30231785774230957,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/1",
+      "index_latency_s": 0.001979209017008543,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": false,
+      "phase2_plan_sha256": "6177f3f5a056fa9f98074788332771ca91b2aeb1bc572267e76bf93bf17c3e46",
+      "repair_rounds": 0,
+      "run_latency_s": 3.388183167000534,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1511899899277422,
+          "mean_top_retrieval_score": 0.25510132561127347,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.6998971978823345,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.16615265607833862,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.16615265607833862,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/2",
+      "index_latency_s": 0.001697166997473687,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "1106066bfe6813aca0bf63eb9d9f66d278f3460f93524748e116b01b8865d7d2",
+      "repair_rounds": 0,
+      "run_latency_s": 9.10093283400056,
+      "sample_correctness": [
+        true,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14333882141444418,
+          "mean_top_retrieval_score": 0.24567721039056778,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7225105325380962,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2792193293571472,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2792193293571472,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/3",
+      "index_latency_s": 0.0017575419915374368,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "83493dac70551ef3fccaf26b888b7d65fb700c838026e53e82a1a96e667da64f",
+      "repair_rounds": 0,
+      "run_latency_s": 6.284742499992717,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1186751013000806,
+          "mean_top_retrieval_score": 0.23656299710273743,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6848201553026836,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.09076744318008423,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.09076744318008423,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/4",
+      "index_latency_s": 0.003087874996708706,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": false,
+      "phase2_plan_sha256": "8da8889f9201496ef151629faa753adb485f4a35bf146440377432832189b08c",
+      "repair_rounds": 0,
+      "run_latency_s": 3.761849250004161,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12278247748812038,
+          "mean_top_retrieval_score": 0.227202740808328,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7068991939226787,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.20116263628005981,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.20116263628005981,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/0",
+      "index_latency_s": 0.00216133298818022,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "988774efe5c116c0fb13e413b10126af3021f1f444bbd900e9c5a4add5a245d1",
+      "repair_rounds": 0,
+      "run_latency_s": 3.5472652919997927,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16500315864880882,
+          "mean_top_retrieval_score": 0.2846890568733215,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7143682996431987,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2385081648826599,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2385081648826599,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    }
+  ],
+  "metadata": {
+    "backend": "openai",
+    "base_url": "https://api.zhizengzeng.com/v1",
+    "conditions": {
+      "decomposition": {
+        "uncertainty_decomposition": true,
+        "uncertainty_filtering": false,
+        "uncertainty_guided_generation": false,
+        "uncertainty_triggered_repair": false,
+        "uncertainty_verified_selection": false
+      },
+      "filtering": {
+        "uncertainty_decomposition": true,
+        "uncertainty_filtering": true,
+        "uncertainty_guided_generation": false,
+        "uncertainty_triggered_repair": false,
+        "uncertainty_verified_selection": false
+      },
+      "guidance": {
+        "uncertainty_decomposition": true,
+        "uncertainty_filtering": true,
+        "uncertainty_guided_generation": true,
+        "uncertainty_triggered_repair": false,
+        "uncertainty_verified_selection": false
+      },
+      "selection": {
+        "uncertainty_decomposition": true,
+        "uncertainty_filtering": true,
+        "uncertainty_guided_generation": true,
+        "uncertainty_triggered_repair": false,
+        "uncertainty_verified_selection": true
+      },
+      "with": {
+        "uncertainty_decomposition": true,
+        "uncertainty_filtering": true,
+        "uncertainty_guided_generation": true,
+        "uncertainty_triggered_repair": true,
+        "uncertainty_verified_selection": true
+      },
+      "without": {
+        "uncertainty_decomposition": false,
+        "uncertainty_filtering": false,
+        "uncertainty_guided_generation": false,
+        "uncertainty_triggered_repair": false,
+        "uncertainty_verified_selection": false
+      }
+    },
+    "created_at": "2026-07-14T10:38:40.611760+00:00",
+    "dataset": "execrepobench",
+    "dataset_path": "input/execrepobench_testbacked.jsonl",
+    "describe_limit": 100,
+    "limit": 10,
+    "model": "gpt-4o-mini",
+    "pretest_uncertainty_note": "Failure-prediction metrics use generation uncertainty computed before validation against the initial generated candidate.",
+    "repo_root": null,
+    "rq": "RQ2"
+  },
+  "public_record": {
+    "generated_code_released": false,
+    "phase2_plans_released": false,
+    "source_payloads_released": false,
+    "test_logs_released": false
+  },
+  "selection": [
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/1",
+      "index_latency_s": 0.2252535830193665,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "a1c3a82100d0dec6a8218dfd09d962c3be6ebff5002d79eb8b972a6a63ccbd5c",
+      "repair_rounds": 0,
+      "run_latency_s": 9.15788845901261,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4687075398862362,
+          "mean_top_retrieval_score": 0.520418930053711,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.31241545639932156,
+          "mean_top_retrieval_score": 0.4014278590679169,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17875614669173956,
+          "mean_top_retrieval_score": 0.23827196657657623,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.8141682008902232,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7375076711177826,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7375076711177826,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/2",
+      "index_latency_s": 0.22498387499945238,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "55284468fbea42460185b8b4fabc8b8658c348e73fbf20c864e765062013237a",
+      "repair_rounds": 0,
+      "run_latency_s": 10.12998554200749,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.46205701927344006,
+          "mean_top_retrieval_score": 0.5107898016770681,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2851383077601592,
+          "mean_top_retrieval_score": 0.3631124297777812,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1852568043395877,
+          "mean_top_retrieval_score": 0.24899891515572867,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.6245029648145041,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.45584815740585327,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.45584815740585327,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/3",
+      "index_latency_s": 0.22045162500580773,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "516986bb85c8c6961511e8e82e2d725e51102a8d3ea1898d686b40c1714cc8fb",
+      "repair_rounds": 0,
+      "run_latency_s": 7.774153416976333,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4577611982822418,
+          "mean_top_retrieval_score": 0.5013815263907114,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.3159841454277436,
+          "mean_top_retrieval_score": 0.43068820238113403,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17794620928665003,
+          "mean_top_retrieval_score": 0.28803926706314087,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.6441292186578116,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5539794266223907,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5539794266223907,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/0",
+      "index_latency_s": 0.020781250001164153,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "0467c6affaddccf94b156bebf3e9815aecec1ff470dd0be6b6a1e7a779639bbd",
+      "repair_rounds": 0,
+      "run_latency_s": 2.971143500006292,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37828705832362175,
+          "mean_top_retrieval_score": 0.4260803461074829,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.18250955939292907,
+          "mean_top_retrieval_score": 0.28489538431167605,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.24567012824118137,
+          "mean_top_retrieval_score": 0.3200089693069458,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6784157435099285,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.058745384216308594,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.058745384216308594,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/2",
+      "index_latency_s": 0.02469470800133422,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "9b6cc205d4a855ab9929f6e8f5a8d57ccb38ce835d084a0f5802538ada3df4e3",
+      "repair_rounds": 0,
+      "run_latency_s": 5.152711125003407,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37036933228373525,
+          "mean_top_retrieval_score": 0.424647319316864,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2554499603807926,
+          "mean_top_retrieval_score": 0.3836184561252594,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23070034347474574,
+          "mean_top_retrieval_score": 0.2849092483520508,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7153902331988018,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.24361783266067505,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.24361783266067505,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/1",
+      "index_latency_s": 0.001979209017008543,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "6177f3f5a056fa9f98074788332771ca91b2aeb1bc572267e76bf93bf17c3e46",
+      "repair_rounds": 0,
+      "run_latency_s": 4.791589375003241,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1511899899277422,
+          "mean_top_retrieval_score": 0.25510132561127347,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7383211175600688,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3582722544670105,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3582722544670105,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/2",
+      "index_latency_s": 0.001697166997473687,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "1106066bfe6813aca0bf63eb9d9f66d278f3460f93524748e116b01b8865d7d2",
+      "repair_rounds": 0,
+      "run_latency_s": 3.856100750010228,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14333882141444418,
+          "mean_top_retrieval_score": 0.24567721039056778,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.702397374312083,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1786535382270813,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1786535382270813,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/3",
+      "index_latency_s": 0.0017575419915374368,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "83493dac70551ef3fccaf26b888b7d65fb700c838026e53e82a1a96e667da64f",
+      "repair_rounds": 0,
+      "run_latency_s": 4.862680332997115,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1186751013000806,
+          "mean_top_retrieval_score": 0.23656299710273743,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.723578170935313,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2845575213432312,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2845575213432312,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/0",
+      "index_latency_s": 0.00216133298818022,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "988774efe5c116c0fb13e413b10126af3021f1f444bbd900e9c5a4add5a245d1",
+      "repair_rounds": 0,
+      "run_latency_s": 8.351615292020142,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16500315864880882,
+          "mean_top_retrieval_score": 0.2846890568733215,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7331555883089702,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.33244460821151733,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.33244460821151733,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/4",
+      "index_latency_s": 0.0015487080090679228,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "8da8889f9201496ef151629faa753adb485f4a35bf146440377432832189b08c",
+      "repair_rounds": 0,
+      "run_latency_s": 8.357676957995864,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12278247748812038,
+          "mean_top_retrieval_score": 0.227202740808328,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7419333259264629,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3763332962989807,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3763332962989807,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    }
+  ],
+  "summary": {
+    "decomposition": {
+      "aurc": 0.35507936507936505,
+      "brier": 0.2619207187798257,
+      "delta_effective_pass@1_ci95": [
+        0.1,
+        0.7
+      ],
+      "delta_effective_pass@1_vs_baseline": 0.4,
+      "delta_sample_pass@1_ci95": [
+        0.06666666666666665,
+        0.5666666666666667
+      ],
+      "delta_sample_pass@1_vs_baseline": 0.3,
+      "ece": 0.17414160450299584,
+      "effective_pass@1": 0.5,
+      "failure_auprc": 0.6226190476190476,
+      "failure_auroc": 0.64,
+      "initial_pass@1": 0.5,
+      "mean_repair_rounds": 0.0,
+      "mean_run_latency_s": 5.228217749891337,
+      "mean_uncertainty": 0.6733247725168865,
+      "n": 10,
+      "n_errors": 0,
+      "n_known_correctness": 10,
+      "n_paired_with_baseline": 10,
+      "pass@1": 0.4333333333333334,
+      "pass@3": 0.5,
+      "pass@5": 0.5,
+      "pass_rate_variance": 0.044444444444444446,
+      "regression_rate": 0.0,
+      "repair_success_rate": null,
+      "selection_success_rate": 0.0
+    },
+    "filtering": {
+      "aurc": 0.4563095238095237,
+      "brier": 0.23838125345610656,
+      "delta_effective_pass@1_ci95": [
+        0.0,
+        0.6
+      ],
+      "delta_effective_pass@1_vs_baseline": 0.3,
+      "delta_sample_pass@1_ci95": [
+        0.06666666666666667,
+        0.4666666666666667
+      ],
+      "delta_sample_pass@1_vs_baseline": 0.26666666666666666,
+      "ece": 0.16724795897801725,
+      "effective_pass@1": 0.4,
+      "failure_auprc": 0.6496031746031746,
+      "failure_auroc": 0.5833333333333334,
+      "initial_pass@1": 0.4,
+      "mean_repair_rounds": 0.0,
+      "mean_run_latency_s": 5.085100737499306,
+      "mean_uncertainty": 0.7079121708869935,
+      "n": 10,
+      "n_errors": 0,
+      "n_known_correctness": 10,
+      "n_paired_with_baseline": 10,
+      "pass@1": 0.4,
+      "pass@3": 0.4,
+      "pass@5": 0.4,
+      "pass_rate_variance": 0.0,
+      "regression_rate": 0.0,
+      "repair_success_rate": null,
+      "selection_success_rate": 0.0
+    },
+    "guidance": {
+      "aurc": 0.31658730158730164,
+      "brier": 0.2695538448268966,
+      "delta_effective_pass@1_ci95": [
+        0.0,
+        0.8
+      ],
+      "delta_effective_pass@1_vs_baseline": 0.4,
+      "delta_sample_pass@1_ci95": [
+        0.16666666666666666,
+        0.5999999999999999
+      ],
+      "delta_sample_pass@1_vs_baseline": 0.3666666666666667,
+      "ece": 0.18985897103945426,
+      "effective_pass@1": 0.5,
+      "failure_auprc": 0.6961904761904762,
+      "failure_auroc": 0.68,
+      "initial_pass@1": 0.5,
+      "mean_repair_rounds": 0.0,
+      "mean_run_latency_s": 6.192689112501102,
+      "mean_uncertainty": 0.6898589710394543,
+      "n": 10,
+      "n_errors": 0,
+      "n_known_correctness": 10,
+      "n_paired_with_baseline": 10,
+      "pass@1": 0.5000000000000001,
+      "pass@3": 0.7,
+      "pass@5": 0.7,
+      "pass_rate_variance": 0.08888888888888889,
+      "regression_rate": 0.0,
+      "repair_success_rate": null,
+      "selection_success_rate": 0.0
+    },
+    "selection": {
+      "aurc": 0.5042063492063492,
+      "brier": 0.2023451952345486,
+      "delta_effective_pass@1_ci95": [
+        0.4,
+        1.0
+      ],
+      "delta_effective_pass@1_vs_baseline": 0.7,
+      "delta_sample_pass@1_ci95": [
+        0.2,
+        0.5333333333333334
+      ],
+      "delta_sample_pass@1_vs_baseline": 0.3666666666666667,
+      "ece": 0.3406440317630768,
+      "effective_pass@1": 0.8,
+      "failure_auprc": 0.7545918367346938,
+      "failure_auroc": 0.6666666666666666,
+      "initial_pass@1": 0.3,
+      "mean_repair_rounds": 0.0,
+      "mean_run_latency_s": 6.5405544751032725,
+      "mean_uncertainty": 0.7115991938114167,
+      "n": 10,
+      "n_errors": 0,
+      "n_known_correctness": 10,
+      "n_paired_with_baseline": 10,
+      "pass@1": 0.5,
+      "pass@3": 0.8,
+      "pass@5": 0.8,
+      "pass_rate_variance": 0.13333333333333336,
+      "regression_rate": 0.0,
+      "repair_success_rate": null,
+      "selection_success_rate": 0.7142857142857143
+    },
+    "with": {
+      "aurc": 0.7923809523809523,
+      "brier": 0.2976117626119298,
+      "delta_effective_pass@1_ci95": [
+        0.4,
+        1.0
+      ],
+      "delta_effective_pass@1_vs_baseline": 0.7,
+      "delta_sample_pass@1_ci95": [
+        0.06666666666666668,
+        0.4
+      ],
+      "delta_sample_pass@1_vs_baseline": 0.23333333333333334,
+      "ece": 0.2220082394282024,
+      "effective_pass@1": 0.8,
+      "failure_auprc": 0.4794973544973545,
+      "failure_auroc": 0.16666666666666666,
+      "initial_pass@1": 0.4,
+      "mean_repair_rounds": 0.4,
+      "mean_run_latency_s": 14.012517533201025,
+      "mean_uncertainty": 0.7312475307782492,
+      "n": 10,
+      "n_errors": 0,
+      "n_known_correctness": 10,
+      "n_paired_with_baseline": 10,
+      "pass@1": 0.3666666666666667,
+      "pass@3": 0.8,
+      "pass@5": 0.8,
+      "pass_rate_variance": 0.15555555555555559,
+      "regression_rate": 0.0,
+      "repair_success_rate": 0.0,
+      "selection_success_rate": 0.6666666666666666
+    },
+    "without": {
+      "aurc": 0.8071031746031746,
+      "brier": 0.10988870661840262,
+      "ece": 0.16150866349538165,
+      "effective_pass@1": 0.1,
+      "failure_auprc": 0.9888888888888889,
+      "failure_auroc": 0.8888888888888888,
+      "initial_pass@1": 0.1,
+      "mean_repair_rounds": 0.0,
+      "mean_run_latency_s": 4.224124658398796,
+      "mean_uncertainty": 0.7384913365046184,
+      "n": 10,
+      "n_errors": 0,
+      "n_known_correctness": 10,
+      "pass@1": 0.13333333333333336,
+      "pass@3": 0.4,
+      "pass@5": 0.4,
+      "pass_rate_variance": 0.08888888888888889,
+      "regression_rate": 0.0,
+      "repair_success_rate": null,
+      "selection_success_rate": 0.0
+    }
+  },
+  "with": [
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/1",
+      "index_latency_s": 0.2252535830193665,
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "phase2_plan_sha256": "a1c3a82100d0dec6a8218dfd09d962c3be6ebff5002d79eb8b972a6a63ccbd5c",
+      "repair_rounds": 0,
+      "run_latency_s": 10.283207583008334,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4687075398862362,
+          "mean_top_retrieval_score": 0.520418930053711,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.31241545639932156,
+          "mean_top_retrieval_score": 0.4014278590679169,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17875614669173956,
+          "mean_top_retrieval_score": 0.23827196657657623,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7861928860346477,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5976310968399048,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5976310968399048,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/2",
+      "index_latency_s": 0.22498387499945238,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "55284468fbea42460185b8b4fabc8b8658c348e73fbf20c864e765062013237a",
+      "repair_rounds": 0,
+      "run_latency_s": 56.15082487498876,
+      "sample_correctness": [
+        true,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.46205701927344006,
+          "mean_top_retrieval_score": 0.5107898016770681,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2851383077601592,
+          "mean_top_retrieval_score": 0.3631124297777812,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1852568043395877,
+          "mean_top_retrieval_score": 0.24899891515572867,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7814542631308239,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5739379823207855,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5739379823207855,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/3",
+      "index_latency_s": 0.22045162500580773,
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "516986bb85c8c6961511e8e82e2d725e51102a8d3ea1898d686b40c1714cc8fb",
+      "repair_rounds": 0,
+      "run_latency_s": 7.232300207979279,
+      "sample_correctness": [
+        true,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.4577611982822418,
+          "mean_top_retrieval_score": 0.5013815263907114,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.3159841454277436,
+          "mean_top_retrieval_score": 0.43068820238113403,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.17794620928665003,
+          "mean_top_retrieval_score": 0.28803926706314087,
+          "n_kept": 15,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.8103191951910655,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.718262642621994,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.718262642621994,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/0",
+      "index_latency_s": 0.020781250001164153,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "0467c6affaddccf94b156bebf3e9815aecec1ff470dd0be6b6a1e7a779639bbd",
+      "repair_rounds": 2,
+      "run_latency_s": 9.282557708007516,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37828705832362175,
+          "mean_top_retrieval_score": 0.4260803461074829,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.18250955939292907,
+          "mean_top_retrieval_score": 0.28489538431167605,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.24567012824118137,
+          "mean_top_retrieval_score": 0.3200089693069458,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7123727003733318,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2285301685333252,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2285301685333252,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/2",
+      "index_latency_s": 0.02469470800133422,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "9b6cc205d4a855ab9929f6e8f5a8d57ccb38ce835d084a0f5802538ada3df4e3",
+      "repair_rounds": 0,
+      "run_latency_s": 10.864964708016487,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.37036933228373525,
+          "mean_top_retrieval_score": 0.424647319316864,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.2554499603807926,
+          "mean_top_retrieval_score": 0.3836184561252594,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23070034347474574,
+          "mean_top_retrieval_score": 0.2849092483520508,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7276396314303081,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3048648238182068,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3048648238182068,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/0",
+      "index_latency_s": 0.0018870839849114418,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "988774efe5c116c0fb13e413b10126af3021f1f444bbd900e9c5a4add5a245d1",
+      "repair_rounds": 0,
+      "run_latency_s": 12.29004624998197,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16500315864880882,
+          "mean_top_retrieval_score": 0.2846890568733215,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7302114526430766,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.31772392988204956,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.31772392988204956,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/1",
+      "index_latency_s": 0.001979209017008543,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "6177f3f5a056fa9f98074788332771ca91b2aeb1bc572267e76bf93bf17c3e46",
+      "repair_rounds": 0,
+      "run_latency_s": 4.6233116670046,
+      "sample_correctness": [
+        false,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1511899899277422,
+          "mean_top_retrieval_score": 0.25510132561127347,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7549101392428081,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4412173628807068,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4412173628807068,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/2",
+      "index_latency_s": 0.001697166997473687,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "1106066bfe6813aca0bf63eb9d9f66d278f3460f93524748e116b01b8865d7d2",
+      "repair_rounds": 0,
+      "run_latency_s": 5.7695221659960225,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14333882141444418,
+          "mean_top_retrieval_score": 0.24567721039056778,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7377466956774394,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3554001450538635,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3554001450538635,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/3",
+      "index_latency_s": 0.0017575419915374368,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "83493dac70551ef3fccaf26b888b7d65fb700c838026e53e82a1a96e667da64f",
+      "repair_rounds": 2,
+      "run_latency_s": 16.548251042026095,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1186751013000806,
+          "mean_top_retrieval_score": 0.23656299710273743,
+          "n_kept": 10,
+          "n_retrieved": 15,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.5461964567502341,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.06431561708450317,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.06431561708450317,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/4",
+      "index_latency_s": 0.0015487080090679228,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "8da8889f9201496ef151629faa753adb485f4a35bf146440377432832189b08c",
+      "repair_rounds": 0,
+      "run_latency_s": 7.080189125001198,
+      "sample_correctness": [
+        true,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12278247748812038,
+          "mean_top_retrieval_score": 0.227202740808328,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7254318873087566,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2938261032104492,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2938261032104492,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": true
+    }
+  ],
+  "without": [
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/1",
+      "index_latency_s": 0.2252535830193665,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": false,
+      "phase2_plan_sha256": "255496deb62b9f2635f69f670156799561852ca57d1ca9dd4291f18b51c68c85",
+      "repair_rounds": 0,
+      "run_latency_s": 4.500574541976675,
+      "sample_correctness": [
+        false,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.39516962692141533,
+          "mean_top_retrieval_score": 0.4445185959339142,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.707114651799202,
+          "mean_top_retrieval_score": 0.8120024800300598,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.6988245770335197,
+          "mean_top_retrieval_score": 0.7513891458511353,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.783905331293742,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.586193323135376,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.586193323135376,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/2",
+      "index_latency_s": 0.22498387499945238,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": false,
+      "phase2_plan_sha256": "255496deb62b9f2635f69f670156799561852ca57d1ca9dd4291f18b51c68c85",
+      "repair_rounds": 0,
+      "run_latency_s": 3.8182618749851827,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.39516962692141533,
+          "mean_top_retrieval_score": 0.4445185959339142,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.707114651799202,
+          "mean_top_retrieval_score": 0.8120024800300598,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.6988245770335197,
+          "mean_top_retrieval_score": 0.7513891458511353,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.7595549980799358,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4644416570663452,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4644416570663452,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "Chronyk/3",
+      "index_latency_s": 0.22045162500580773,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "255496deb62b9f2635f69f670156799561852ca57d1ca9dd4291f18b51c68c85",
+      "repair_rounds": 0,
+      "run_latency_s": 1.9334147089975886,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.39516962692141533,
+          "mean_top_retrieval_score": 0.4445185959339142,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.707114651799202,
+          "mean_top_retrieval_score": 0.8120024800300598,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.6988245770335197,
+          "mean_top_retrieval_score": 0.7513891458511353,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.7775910536448162,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5546219348907471,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5546219348907471,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/0",
+      "index_latency_s": 0.020781250001164153,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "d15923f076f4372bf23d91a22d5d596775dc6f51f7dbd5cc4b3c0f9051c39f49",
+      "repair_rounds": 0,
+      "run_latency_s": 8.087224582995987,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.5904844254255295,
+          "mean_top_retrieval_score": 0.6710799932479858,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.6883024536073208,
+          "mean_top_retrieval_score": 0.8726787567138672,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.7482457756996155,
+          "mean_top_retrieval_score": 0.9665757417678833,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.763924793402354,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4862906336784363,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4862906336784363,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "shortuuid/2",
+      "index_latency_s": 0.02469470800133422,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": false,
+      "phase2_plan_sha256": "d15923f076f4372bf23d91a22d5d596775dc6f51f7dbd5cc4b3c0f9051c39f49",
+      "repair_rounds": 0,
+      "run_latency_s": 5.7890005000226665,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.5904844254255295,
+          "mean_top_retrieval_score": 0.6710799932479858,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.6883024536073208,
+          "mean_top_retrieval_score": 0.8726787567138672,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 8.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.7482457756996155,
+          "mean_top_retrieval_score": 0.9665757417678833,
+          "n_kept": 8,
+          "n_retrieved": 8,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.7574903051058453,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.45411819219589233,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.45411819219589233,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/1",
+      "index_latency_s": 0.001979209017008543,
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "phase2_plan_sha256": "78312444c4c1bd13ae59328a6a91d456562cc68d9e52e267178ff128c76b1f9f",
+      "repair_rounds": 0,
+      "run_latency_s": 4.911890666000545,
+      "sample_correctness": [
+        true,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.6510055810213089,
+          "mean_top_retrieval_score": 0.8773636817932129,
+          "n_kept": 3,
+          "n_retrieved": 3,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.7020303408304851,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1768183708190918,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.1768183708190918,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/2",
+      "index_latency_s": 0.001697166997473687,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "78312444c4c1bd13ae59328a6a91d456562cc68d9e52e267178ff128c76b1f9f",
+      "repair_rounds": 0,
+      "run_latency_s": 3.4843788750004023,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.6510055810213089,
+          "mean_top_retrieval_score": 0.8773636817932129,
+          "n_kept": 3,
+          "n_retrieved": 3,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.6822331945101421,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.07783263921737671,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.07783263921737671,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/3",
+      "index_latency_s": 0.0017575419915374368,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "78312444c4c1bd13ae59328a6a91d456562cc68d9e52e267178ff128c76b1f9f",
+      "repair_rounds": 0,
+      "run_latency_s": 3.6389816669980064,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.6510055810213089,
+          "mean_top_retrieval_score": 0.8773636817932129,
+          "n_kept": 3,
+          "n_retrieved": 3,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.7050792495409648,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.19206291437149048,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.19206291437149048,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/4",
+      "index_latency_s": 0.003087874996708706,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "78312444c4c1bd13ae59328a6a91d456562cc68d9e52e267178ff128c76b1f9f",
+      "repair_rounds": 0,
+      "run_latency_s": 2.766235416987911,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.6510055810213089,
+          "mean_top_retrieval_score": 0.8773636817932129,
+          "n_kept": 3,
+          "n_retrieved": 3,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.7233888188997906,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2836107611656189,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.2836107611656189,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    },
+    {
+      "candidate_count": 3,
+      "correctness_mode": "repository_tests",
+      "id": "workdays/0",
+      "index_latency_s": 0.00216133298818022,
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "phase2_plan_sha256": "78312444c4c1bd13ae59328a6a91d456562cc68d9e52e267178ff128c76b1f9f",
+      "repair_rounds": 0,
+      "run_latency_s": 3.3112837500229944,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        },
+        "context": {
+          "avg_kept_per_step": 3.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.6510055810213089,
+          "mean_top_retrieval_score": 0.8773636817932129,
+          "n_kept": 3,
+          "n_retrieved": 3,
+          "n_steps": 1
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 1
+        }
+      },
+      "u": {
+        "aggregate": 0.7297152797381083,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.31524306535720825,
+        "token_entropy": 1.0
+      },
+      "uncertainty_components": {
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.31524306535720825,
+        "token_entropy": 1.0
+      },
+      "verified_selection_applied": false
+    }
+  ]
+}

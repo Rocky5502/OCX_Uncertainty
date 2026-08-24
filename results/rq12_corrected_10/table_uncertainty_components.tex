@@ -1,0 +1,40 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Component analysis of uncertainty-aware generation and mitigation. Effective Pass@1 evaluates the final selected or repaired output; Sample Pass@$k$ evaluates the three raw candidates. Pass@5 is omitted because this experiment generated three candidates per task.}
+\label{tab:uncertainty_component_effectiveness}
+\begin{tabular}{llrrrrrr}
+\toprule
+Backend & Method & Effective P@1 & Sample P@1 & Sample P@3 & $\Delta$Effective P@1 & ECE$\downarrow$ & AURC$\downarrow$ \\
+\midrule
+GPT & Baseline RAG & 10.0 & 13.3 & 40.0 & -- & 0.162 & 0.807 \\
+GPT & + Decomposition & 50.0 & 43.3 & 50.0 & 40.0 & 0.174 & 0.355 \\
+GPT & + Unc. filtering & 40.0 & 40.0 & 40.0 & 30.0 & 0.167 & 0.456 \\
+GPT & + Guided generation & 50.0 & 50.0 & 70.0 & 40.0 & 0.190 & 0.317 \\
+GPT & + Verified selection & 80.0 & 50.0 & 80.0 & 70.0 & 0.341 & 0.504 \\
+GPT & OpenCoder (+ repair) & 80.0 & 36.7 & 80.0 & 70.0 & 0.222 & 0.792 \\
+\midrule
+Gemini & Baseline RAG & 0.0 & 13.3 & 40.0 & -- & 0.191 & 1.000 \\
+Gemini & + Decomposition & 20.0 & 20.0 & 40.0 & 20.0 & 0.193 & 0.698 \\
+Gemini & + Unc. filtering & 20.0 & 13.3 & 20.0 & 20.0 & 0.315 & 0.956 \\
+Gemini & + Guided generation & 20.0 & 13.3 & 30.0 & 20.0 & 0.171 & 0.797 \\
+Gemini & + Verified selection & 20.0 & 13.3 & 20.0 & 20.0 & 0.286 & 0.945 \\
+Gemini & OpenCoder (+ repair) & 60.0 & 26.7 & 40.0 & 60.0 & 0.153 & 0.430 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\centering
+\small
+\caption{Mitigation diagnostics for complete OpenCoder. AUROC predicts initial generation failure before validation.}
+\label{tab:mitigation_diagnostics}
+\begin{tabular}{lrrrrr}
+\toprule
+Backend & Failure AUROC & AUPRC & Selection success & Repair success & Time (s) \\
+\midrule
+GPT & 0.167 & 0.479 & 66.7 & 0.0 & 14.0 \\
+Gemini & 0.905 & 0.962 & 14.3 & 33.3 & 59.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

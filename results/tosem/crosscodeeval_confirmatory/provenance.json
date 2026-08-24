@@ -1,0 +1,128 @@
+{
+  "protocol": "results/tosem/crosscodeeval_confirmatory/protocol_freeze.json",
+  "protocol_sha256": "2740025560981c8e92a7178cfe87f9e842cdfb8e093b8842ca6b4b5512dc5a4e",
+  "manifest": "data/manifests/crosscodeeval_opencoderx_100_v1.jsonl",
+  "manifest_sha256": "b9c6e06fc0d3ddc5cd2e6fcf2e41a3594a257556d5f472a2b96028d4d09b5255",
+  "raw_result_files": [
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gpt4o_mini/batch_00.json",
+      "sha256": "336dc03483ecd7bb54b08150be341d552cfe8adab62a76a8ce0630610c0a7c31",
+      "model": "gpt-4o-mini",
+      "created_at": "2026-08-12T06:14:35.793973+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gpt4o_mini/batch_01.json",
+      "sha256": "782582c0801a224b94b7c2488f1b9fdf4eb070eb005a33202563e97f7f7466c7",
+      "model": "gpt-4o-mini",
+      "created_at": "2026-08-12T06:16:44.516496+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gpt4o_mini/batch_02.json",
+      "sha256": "0a0435e36f3ae3d7099c56ea3e3facb7c7a778c9c26e6e754ad74b4ccd99ae6a",
+      "model": "gpt-4o-mini",
+      "created_at": "2026-08-12T06:18:55.577885+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gpt4o_mini/batch_03.json",
+      "sha256": "8a4a7ac1d3bb2b34d2995d4b4d642f89df00c01df4c412566d1c0ba15843e0ef",
+      "model": "gpt-4o-mini",
+      "created_at": "2026-08-12T06:20:59.863532+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gemini_2_5_flash/batch_00.json",
+      "sha256": "de7efdca339ce25485297b485ff3703fc5df067524697e310d25ac4f10e9041e",
+      "model": "gemini-2.5-flash",
+      "created_at": "2026-08-12T06:14:35.793968+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gemini_2_5_flash/batch_01.json",
+      "sha256": "3b5ea54d7dda0f21c9f83780306c6e1757f067685fd622f1546f7fd0c3f4c927",
+      "model": "gemini-2.5-flash",
+      "created_at": "2026-08-12T06:38:13.809297+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gemini_2_5_flash/batch_02.json",
+      "sha256": "42ef9a59e744b3f8f10b22faf36caedf2c1fbba4a97e28979ffa3069f5bcd94c",
+      "model": "gemini-2.5-flash",
+      "created_at": "2026-08-12T06:45:21.396740+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/gemini_2_5_flash/batch_03.json",
+      "sha256": "5b0c11b252ce6b4042e11a0ce1d5c4586f216921209148fda2b761c1180387c1",
+      "model": "gemini-2.5-flash",
+      "created_at": "2026-08-12T06:55:09.004049+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/claude_sonnet_5/batch_00.json",
+      "sha256": "f27ff34a2de10259e325a1278831d4aebde780a30a7590444f327abdbe45959a",
+      "model": "claude-sonnet-5",
+      "created_at": "2026-08-12T06:22:58.317937+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/claude_sonnet_5/batch_01.json",
+      "sha256": "e3685bb0e971faea19e21cb7a694c3f511fd83f45f181887b6a5a994f0c15d03",
+      "model": "claude-sonnet-5",
+      "created_at": "2026-08-12T06:43:13.577419+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/claude_sonnet_5/batch_02.json",
+      "sha256": "a9bcd03201499f3c2a93d0d79ba27c2d5a7bd67e91ea2f8a17823776c233354a",
+      "model": "claude-sonnet-5",
+      "created_at": "2026-08-12T07:03:09.885574+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/claude_sonnet_5/batch_03.json",
+      "sha256": "b4cdd67f036d744ced4b980e3014b46ac26b9fe7a53eb6157d7cb1e5abc20152",
+      "model": "claude-sonnet-5",
+      "created_at": "2026-08-12T07:22:26.368208+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/qwen3_coder_plus/batch_00.json",
+      "sha256": "bc1566ddf3329f148460d8b6adfe162bbc627b57014012311890b0113ab3e5f8",
+      "model": "qwen3-coder-plus",
+      "created_at": "2026-08-12T07:04:25.276666+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/qwen3_coder_plus/batch_01.json",
+      "sha256": "0302bdc8a3f7df2de17c8c43207942c094aecbb58b8e8a145d32db164a3081f7",
+      "model": "qwen3-coder-plus",
+      "created_at": "2026-08-12T07:20:22.362211+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/qwen3_coder_plus/batch_02.json",
+      "sha256": "c97d0344619a2dd9db45ef355a146ee71cae9c4c203edd2cf8b71c32b3a3373f",
+      "model": "qwen3-coder-plus",
+      "created_at": "2026-08-12T07:36:01.816054+00:00",
+      "cells": 50
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/qwen3_coder_plus/batch_03.json",
+      "sha256": "64516d875c3ac812b62b48cd4c3c1ede0de4c82b31eedb100e15167c1cab1c73",
+      "model": "qwen3-coder-plus",
+      "created_at": "2026-08-12T07:52:18.267146+00:00",
+      "cells": 50
+    }
+  ],
+  "analysis_script": "scripts/analyze_crosscodeeval_confirmatory.py",
+  "analysis_script_sha256": "2ee6b163993f8ea04b753042d78e1550c073be2c7f7b82a57143a5d633e3c594",
+  "metric_scope": "CrossCodeEval native completion metrics; no executable functional correctness.",
+  "bootstrap": {
+    "iterations": 10000,
+    "seed": 20260809,
+    "unit": "task"
+  }
+}

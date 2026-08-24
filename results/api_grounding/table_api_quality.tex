@@ -1,0 +1,26 @@
+\begin{table*}[t]
+\centering
+\caption{Macro-averaged API retrieval quality on API-bearing RepoExec and CoderEval tasks. ExecRepoBench is excluded because the selected subset contains no resolvable repository-specific API invocation. Exact denotes exact API-set match.}
+\label{tab:rq4_api_quality}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Backend} & \textbf{Method} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Exact} \\
+\midrule
+GPT & Baseline RAG & 31.7 & 78.8 & 43.4 & 0.0 \\
+GPT & OpenCoder-NoUncFilter & 31.1 & 84.0 & 42.9 & 0.0 \\
+GPT & OpenCoder-NoAPIRefine & 34.1 & 82.1 & 45.1 & 3.8 \\
+GPT & OpenCoder & 62.1 & 82.1 & 64.8 & 57.7 \\
+GPT & ContextOnly & 0.0 & 0.0 & 0.0 & 0.0 \\
+GPT & API-informed ref. & 100.0 & 100.0 & 100.0 & 100.0 \\
+\midrule
+Gemini & Baseline RAG & 31.7 & 78.8 & 43.4 & 0.0 \\
+Gemini & OpenCoder-NoUncFilter & 30.4 & 77.2 & 41.6 & 0.0 \\
+Gemini & OpenCoder-NoAPIRefine & 29.3 & 73.4 & 39.9 & 0.0 \\
+Gemini & OpenCoder & 56.1 & 73.4 & 59.1 & 50.0 \\
+Gemini & ContextOnly & 0.0 & 0.0 & 0.0 & 0.0 \\
+Gemini & API-informed ref. & 100.0 & 100.0 & 100.0 & 100.0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

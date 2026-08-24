@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Per-model executable correctness in the exploratory gateway replication. Cells report correct/evaluable outputs; Miss reports model-side non-response across twelve tasks.}
+\label{tab:gateway_agent_models}
+\begin{tabular}{llrrrr}
+\toprule
+Family & Gateway model & Generic & Uncertainty & Targeted & Miss \\
+\midrule
+GPT & \texttt{gpt-4o-mini} & 1/4 & 2/4 & 0/4 & 0 \\
+Claude & \texttt{claude-sonnet-4-6} & 2/4 & 2/4 & 2/4 & 0 \\
+Gemini & \texttt{gemini-2.5-flash-lite} & 0/3 & 2/3 & 1/4 & 2 \\
+DeepSeek & \texttt{deepseek-v3.2} & 1/2 & 2/2 & 1/3 & 5 \\
+Qwen & \texttt{qwen3-coder-plus} & 2/4 & 2/4 & 2/4 & 0 \\
+Kimi & \texttt{kimi-k2.7-code} & 1/3 & 1/4 & 2/2 & 3 \\
+Grok & \texttt{grok-code-fast-1} & 2/4 & 2/4 & 1/4 & 0 \\
+Llama & \texttt{llama-4-maverick} & 2/4 & 2/4 & 1/4 & 0 \\
+GLM & \texttt{glm-4.7} & 2/4 & 2/4 & 2/4 & 0 \\
+MiniMax & \texttt{minimax-m2.5} & 1/4 & 1/4 & 1/4 & 0 \\
+Doubao & \texttt{doubao-seed-2-0-code-preview-260215} & 1/4 & 2/4 & 2/4 & 0 \\
+ERNIE & \texttt{ernie-4.5-turbo-32k} & 2/4 & 1/4 & 1/4 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

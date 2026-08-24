@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "paper_eligible": true,
+  "issues": [],
+  "opencoder_records": 480,
+  "decision_records": 960,
+  "review_simulation_rows": 5040,
+  "observed_intervention_rows": 28,
+  "not_run_intervention_rows": 3,
+  "language_cells": 16,
+  "repository_cells": 148
+}

@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Failure discrimination on ExecRepoBench-120. CIs are task-bootstrap intervals; AUPRC is interpreted relative to model-specific failure prevalence.}
+\label{tab:uncertainty_discrimination_final}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Signal & AUROC & 95\% CI & AUPRC & Brier & ECE \\
+\midrule
+GPT-4o-mini & API & 0.567 & [0.462, 0.671] & 0.751 & 0.382 & 0.416 \\
+GPT-4o-mini & Context & 0.549 & [0.443, 0.650] & 0.777 & 0.402 & 0.401 \\
+GPT-4o-mini & Similar code & 0.540 & [0.426, 0.650] & 0.727 & 0.383 & 0.413 \\
+GPT-4o-mini & Generation & 0.615 & [0.500, 0.720] & 0.786 & 0.205 & 0.065 \\
+GPT-4o-mini & Aggregate & 0.632 & [0.533, 0.728] & 0.828 & 0.301 & 0.309 \\
+\midrule
+Gemini 2.5 Flash & API & 0.477 & [0.373, 0.581] & 0.640 & 0.357 & 0.350 \\
+Gemini 2.5 Flash & Context & 0.529 & [0.423, 0.630] & 0.707 & 0.381 & 0.360 \\
+Gemini 2.5 Flash & Similar code & 0.511 & [0.403, 0.623] & 0.645 & 0.348 & 0.339 \\
+Gemini 2.5 Flash & Generation & 0.618 & [0.509, 0.725] & 0.714 & 0.221 & 0.084 \\
+Gemini 2.5 Flash & Aggregate & 0.602 & [0.497, 0.701] & 0.763 & 0.284 & 0.244 \\
+\midrule
+Claude Sonnet 5 & API & 0.547 & [0.427, 0.663] & 0.359 & 0.192 & 0.077 \\
+Claude Sonnet 5 & Context & 0.554 & [0.432, 0.678] & 0.357 & 0.216 & 0.163 \\
+Claude Sonnet 5 & Similar code & 0.563 & [0.443, 0.683] & 0.316 & 0.192 & 0.061 \\
+Claude Sonnet 5 & Generation & 0.745 & [0.646, 0.835] & 0.492 & 0.296 & 0.365 \\
+Claude Sonnet 5 & Aggregate & 0.692 & [0.583, 0.795] & 0.489 & 0.193 & 0.135 \\
+\midrule
+Qwen3-Coder-Plus & API & 0.596 & [0.492, 0.697] & 0.511 & 0.244 & 0.132 \\
+Qwen3-Coder-Plus & Context & 0.486 & [0.377, 0.595] & 0.439 & 0.300 & 0.210 \\
+Qwen3-Coder-Plus & Similar code & 0.481 & [0.375, 0.588] & 0.398 & 0.259 & 0.122 \\
+Qwen3-Coder-Plus & Generation & 0.704 & [0.602, 0.800] & 0.619 & 0.265 & 0.225 \\
+Qwen3-Coder-Plus & Aggregate & 0.596 & [0.486, 0.702] & 0.549 & 0.233 & 0.033 \\
+\bottomrule
+\end{tabular}
+\end{table*}

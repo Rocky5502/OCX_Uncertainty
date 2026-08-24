@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenCoderX human-study participant record",
+  "type": "object",
+  "required": [
+    "record_type", "study_mode", "participant_code", "assignment_group",
+    "consent", "adult", "primary_role", "additional_roles",
+    "programming_years", "python_years", "ai_tool_usage",
+    "code_review_frequency", "repository_development_frequency",
+    "testing_familiarity", "dependency_tracing_familiarity",
+    "started_at_utc"
+  ],
+  "properties": {
+    "record_type": {"const": "participant"},
+    "study_mode": {"enum": ["EMPIRICAL", "SIMULATED_DRY_RUN"]},
+    "participant_code": {"pattern": "^H[0-9]{3}$"},
+    "assignment_group": {"type": "integer", "minimum": 1, "maximum": 3},
+    "consent": {"type": "boolean"},
+    "adult": {"type": "boolean"},
+    "primary_role": {
+      "enum": ["software_engineer", "ai_ml_researcher", "phd_student", "other"]
+    },
+    "additional_roles": {
+      "type": "array",
+      "items": {"enum": ["software_engineer", "ai_ml_researcher", "phd_student", "other"]},
+      "uniqueItems": true
+    },
+    "programming_years": {"type": "number", "minimum": 1, "maximum": 60},
+    "python_years": {"type": "number", "minimum": 1, "maximum": 40},
+    "ai_tool_usage": {"type": "integer", "minimum": 0, "maximum": 5},
+    "code_review_frequency": {"type": "integer", "minimum": 0, "maximum": 5},
+    "repository_development_frequency": {"type": "integer", "minimum": 0, "maximum": 5},
+    "testing_familiarity": {"type": "integer", "minimum": 1, "maximum": 5},
+    "dependency_tracing_familiarity": {"type": "integer", "minimum": 1, "maximum": 5},
+    "started_at_utc": {"type": "string"},
+    "completed_at_utc": {"type": ["string", "null"]},
+    "withdrawn": {"type": "boolean", "default": false}
+  },
+  "anyOf": [
+    {
+      "properties": {
+        "code_review_frequency": {"type": "integer", "minimum": 1, "maximum": 5}
+      }
+    },
+    {
+      "properties": {
+        "repository_development_frequency": {"type": "integer", "minimum": 1, "maximum": 5}
+      }
+    },
+    {
+      "properties": {
+        "testing_familiarity": {"type": "integer", "minimum": 2, "maximum": 5}
+      }
+    }
+  ],
+  "additionalProperties": false
+}

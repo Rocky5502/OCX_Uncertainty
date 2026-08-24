@@ -1,0 +1,51 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Offline review-allocation simulation at a 20\% nominal review budget and 75\% reviewer-success assumption. Team success includes simulated corrections and is not observed human performance.}
+\label{tab:review_allocation}
+\begin{tabular}{llrrrr}
+\toprule
+Model & Policy & Team success & Failure capture & Deferral precision & Unnecessary review \\
+\midrule
+gpt-4o-mini & Always autonomous & 30.8 & 0.0 & 0.0 & 0.0 \\
+gpt-4o-mini & Random & 40.3 & 18.8 & 65.0 & 35.0 \\
+gpt-4o-mini & Pre-repair test failure & 44.8 & 27.7 & 95.8 & 4.2 \\
+gpt-4o-mini & Semantic confidence & 43.3 & 24.1 & 83.3 & 16.7 \\
+gpt-4o-mini & Token entropy & 40.7 & 20.5 & 70.8 & 29.2 \\
+gpt-4o-mini & Self-consistency & 41.5 & 20.5 & 70.8 & 29.2 \\
+gpt-4o-mini & Aggregate uncertainty & 43.2 & 24.1 & 83.3 & 16.7 \\
+gpt-4o-mini & Source-specific OpenCoderX & 41.3 & 24.1 & 83.3 & 16.7 \\
+gpt-4o-mini & Oracle (upper bound) & 45.5 & 28.9 & 100.0 & 0.0 \\
+\midrule
+gemini-2.5-flash & Always autonomous & 36.7 & 0.0 & 0.0 & 0.0 \\
+gemini-2.5-flash & Random & 45.8 & 20.0 & 63.3 & 36.7 \\
+gemini-2.5-flash & Pre-repair test failure & 50.8 & 30.3 & 95.8 & 4.2 \\
+gemini-2.5-flash & Semantic confidence & 46.8 & 23.7 & 75.0 & 25.0 \\
+gemini-2.5-flash & Token entropy & 45.5 & 19.7 & 62.5 & 37.5 \\
+gemini-2.5-flash & Self-consistency & 48.0 & 22.4 & 70.8 & 29.2 \\
+gemini-2.5-flash & Aggregate uncertainty & 47.2 & 22.4 & 70.8 & 29.2 \\
+gemini-2.5-flash & Source-specific OpenCoderX & 44.7 & 19.7 & 62.5 & 37.5 \\
+gemini-2.5-flash & Oracle (upper bound) & 51.3 & 31.6 & 100.0 & 0.0 \\
+\midrule
+claude-sonnet-5 & Always autonomous & 74.2 & 0.0 & 0.0 & 0.0 \\
+claude-sonnet-5 & Random & 78.0 & 21.3 & 27.5 & 72.5 \\
+claude-sonnet-5 & Pre-repair test failure & 85.5 & 54.8 & 70.8 & 29.2 \\
+claude-sonnet-5 & Semantic confidence & 79.8 & 29.0 & 37.5 & 62.5 \\
+claude-sonnet-5 & Token entropy & 77.3 & 16.1 & 20.8 & 79.2 \\
+claude-sonnet-5 & Self-consistency & 80.2 & 29.0 & 37.5 & 62.5 \\
+claude-sonnet-5 & Aggregate uncertainty & 79.5 & 29.0 & 37.5 & 62.5 \\
+claude-sonnet-5 & Source-specific OpenCoderX & 77.5 & 22.6 & 29.2 & 70.8 \\
+claude-sonnet-5 & Oracle (upper bound) & 89.7 & 77.4 & 100.0 & 0.0 \\
+\midrule
+qwen3-coder-plus & Always autonomous & 60.0 & 0.0 & 0.0 & 0.0 \\
+qwen3-coder-plus & Random & 65.7 & 19.6 & 39.2 & 60.8 \\
+qwen3-coder-plus & Pre-repair test failure & 73.3 & 43.8 & 87.5 & 12.5 \\
+qwen3-coder-plus & Semantic confidence & 67.7 & 27.1 & 54.2 & 45.8 \\
+qwen3-coder-plus & Token entropy & 64.5 & 16.7 & 33.3 & 66.7 \\
+qwen3-coder-plus & Self-consistency & 68.2 & 27.1 & 54.2 & 45.8 \\
+qwen3-coder-plus & Aggregate uncertainty & 69.3 & 33.3 & 66.7 & 33.3 \\
+qwen3-coder-plus & Source-specific OpenCoderX & 67.0 & 27.1 & 54.2 & 45.8 \\
+qwen3-coder-plus & Oracle (upper bound) & 75.3 & 50.0 & 100.0 & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,40 @@
+{
+  "inputs": [
+    {
+      "path": "results/rq12_corrected_10/gpt/rq1.json",
+      "sha256": "14a4aebe0b3a6c6e36f9eb0cd573c5a8e04093a46398178e1f9ebce1438c0197"
+    },
+    {
+      "path": "results/rq12_corrected_10/gemini/rq1.json",
+      "sha256": "660873bd6213c77a383947a09f5547824ed8a1fd6e4d8bd94f4b83ab5abcb09b"
+    },
+    {
+      "path": "results/tosem/collaboration_analysis/decision_records.jsonl",
+      "sha256": "fe9348329036ef84e99751a12a73938bd68ec187d46d5c7fa0c337d71c5305d7"
+    },
+    {
+      "path": "results/tosem/confirmatory_analysis/uncertainty_calibration.csv",
+      "sha256": "3c4316b3bb29fb02791975681d8704e77b7b8829c9253ef3904af557dbd05c1b"
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/paired_statistics.csv",
+      "sha256": "975a4bd8acd0c512efa540cd464d6a19104642af7ccf539cd221f693fb0f1be9"
+    },
+    {
+      "path": "results/tosem/crosscodeeval_confirmatory/uncertainty_calibration.csv",
+      "sha256": "715d283dc2bb4e5001d29f7267e8bc0f7b2d353e738a4a7002d56462a94c98b0"
+    },
+    {
+      "path": "scripts/analyze_tosem_rq1_rq2.py",
+      "sha256": "84bf4cf3a516db5e9bef017d498c745b6be1d367b08f05bd8635deb2da4c9042"
+    }
+  ],
+  "analysis_script": "scripts/analyze_tosem_rq1_rq2.py",
+  "bootstrap": {
+    "iterations": 10000,
+    "seed": 20260809,
+    "unit": "task"
+  },
+  "scope_note": "The 2^3 source factorial is GPT/Gemini on 10 execution-backed tasks. Four-family source risks are observational failure signals, not causal source ablations.",
+  "crosscodeeval_note": "CrossCodeEval endpoints are native non-executable metrics."
+}

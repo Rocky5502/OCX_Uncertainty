@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{CrossCodeEval-100 context effect by language (25 tasks per cell). Exact match is a native, non-executable completion metric.}
+\label{tab:cross_language_final}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Language & Direct EM & Context EM & $\Delta$ & 95\% CI & $p_H$ \\
+\midrule
+GPT-4o-mini & Python & 16.0 & 24.0 & +8.0 & [0.0, 20.0] & 1.000 \\
+GPT-4o-mini & Java & 4.0 & 16.0 & +12.0 & [0.0, 24.0] & 1.000 \\
+GPT-4o-mini & TypeScript & 4.0 & 16.0 & +12.0 & [0.0, 24.0] & 1.000 \\
+GPT-4o-mini & C\# & 0.0 & 4.0 & +4.0 & [0.0, 12.0] & 1.000 \\
+\midrule
+Gemini 2.5 Flash & Python & 4.0 & 20.0 & +16.0 & [4.0, 32.0] & 0.500 \\
+Gemini 2.5 Flash & Java & 0.0 & 4.0 & +4.0 & [0.0, 12.0] & 1.000 \\
+Gemini 2.5 Flash & TypeScript & 12.0 & 12.0 & +0.0 & [-16.0, 16.0] & 1.000 \\
+Gemini 2.5 Flash & C\# & 4.0 & 4.0 & +0.0 & [-12.0, 12.0] & 1.000 \\
+\midrule
+Claude Sonnet 5 & Python & 32.0 & 28.0 & -4.0 & [-12.0, 0.0] & 1.000 \\
+Claude Sonnet 5 & Java & 16.0 & 24.0 & +8.0 & [-12.0, 28.0] & 1.000 \\
+Claude Sonnet 5 & TypeScript & 12.0 & 28.0 & +16.0 & [4.0, 32.0] & 0.375 \\
+Claude Sonnet 5 & C\# & 4.0 & 28.0 & +24.0 & [8.0, 40.0] & 0.125 \\
+\midrule
+Qwen3-Coder-Plus & Python & 16.0 & 32.0 & +16.0 & [4.0, 32.0] & 0.500 \\
+Qwen3-Coder-Plus & Java & 8.0 & 16.0 & +8.0 & [0.0, 20.0] & 1.000 \\
+Qwen3-Coder-Plus & TypeScript & 4.0 & 12.0 & +8.0 & [-8.0, 24.0] & 1.000 \\
+Qwen3-Coder-Plus & C\# & 0.0 & 8.0 & +8.0 & [0.0, 20.0] & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

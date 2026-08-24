@@ -1,0 +1,30 @@
+{
+  "provider": {
+    "base_url_env": "OPENCODER_LLM_BASE_URL",
+    "api_key_env": "OPENCODER_LLM_API_KEY",
+    "timeout_seconds": 180,
+    "retries": 2
+  },
+  "generation": {
+    "candidate_count": 5,
+    "temperature": 0.7,
+    "max_output_tokens": 2048,
+    "max_repair_rounds": 2
+  },
+  "retrieval": {
+    "api_top_k": 8,
+    "context_top_k": 8,
+    "similar_code_top_k": 8,
+    "fused_top_k": 10
+  },
+  "paths": {
+    "benchmark_root": ".benchmarks",
+    "cache_root": "cache",
+    "output_root": "outputs"
+  },
+  "human_interface": {
+    "host": "127.0.0.1",
+    "port": 8765,
+    "data_directory": "human_study/data"
+  }
+}

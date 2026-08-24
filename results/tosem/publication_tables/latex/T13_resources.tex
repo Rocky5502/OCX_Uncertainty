@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{ExecRepoBench-120 resource use per task. Costs use the frozen gateway pricing audit and are reported in each model's billing currency.}
+\label{tab:resources_final}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Method & Mean tokens & Mean latency (s) & Mean repairs & Total cost & Currency \\
+\midrule
+GPT-4o-mini & Direct Generation & 1930 & 12.9 & 0.00 & 0.067 & USD \\
+GPT-4o-mini & Standard RAG & 3774 & 25.2 & 0.00 & 0.107 & USD \\
+GPT-4o-mini & RAG + Verify/Repair & 9205 & 58.9 & 1.37 & 0.224 & USD \\
+GPT-4o-mini & OpenCoderX & 12968 & 51.0 & 1.43 & 0.352 & USD \\
+\midrule
+Gemini 2.5 Flash & Direct Generation & 15471 & 55.9 & 0.00 & 2.674 & USD \\
+Gemini 2.5 Flash & Standard RAG & 26328 & 57.1 & 0.00 & 3.294 & USD \\
+Gemini 2.5 Flash & RAG + Verify/Repair & 31543 & 70.0 & 1.32 & 3.907 & USD \\
+Gemini 2.5 Flash & OpenCoderX & 35409 & 91.1 & 1.36 & 4.632 & USD \\
+\midrule
+Claude Sonnet 5 & Direct Generation & 11828 & 63.3 & 0.00 & 5.882 & USD \\
+Claude Sonnet 5 & Standard RAG & 22609 & 68.4 & 0.00 & 8.362 & USD \\
+Claude Sonnet 5 & RAG + Verify/Repair & 26457 & 86.9 & 0.61 & 9.734 & USD \\
+Claude Sonnet 5 & OpenCoderX & 38888 & 426.0 & 0.61 & 18.103 & USD \\
+\midrule
+Qwen3-Coder-Plus & Direct Generation & 8392 & 70.8 & 0.00 & 5.768 & CNY \\
+Qwen3-Coder-Plus & Standard RAG & 17386 & 49.4 & 0.00 & 10.191 & CNY \\
+Qwen3-Coder-Plus & RAG + Verify/Repair & 23378 & 60.6 & 0.86 & 13.589 & CNY \\
+Qwen3-Coder-Plus & OpenCoderX & 26310 & 95.7 & 0.87 & 16.317 & CNY \\
+\bottomrule
+\end{tabular}
+\end{table*}

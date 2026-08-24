@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Task-paired two-way evidence interactions on the audited 10-task, three-candidate factorial campaign. Effects do not represent four-family estimates.}
+\label{tab:evidence_interactions_final}
+\begin{tabular}{llrrrr}
+\toprule
+Backend & Interaction & $\Delta U$ & $p_H$ & $\Delta$P@1 & $p_H$ \\
+\midrule
+GPT & api:context & +0.077 & 0.404 & +0.0 & 0.961 \\
+GPT & api:similar\_code & +0.020 & 0.657 & +10.0 & 0.611 \\
+GPT & context:similar\_code & -0.044 & 0.085 & +33.3 & 0.032 \\
+Gemini & api:context & +0.051 & 0.345 & -10.0 & 1.000 \\
+Gemini & api:similar\_code & -0.059 & 0.032 & +10.0 & 1.000 \\
+Gemini & context:similar\_code & +0.029 & 0.389 & +10.0 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

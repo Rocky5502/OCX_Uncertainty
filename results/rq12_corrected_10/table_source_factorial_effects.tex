@@ -1,0 +1,39 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Task-paired factorial effects of retrieval evidence. $\Delta U$ and $\Delta$Pass@1 are marginal present-minus-absent effects over the remaining source factors. Confidence intervals use 10,000 task-level bootstrap resamples; $p_{\mathrm{Holm}}$ adjusts the three source tests within each backend and metric.}
+\label{tab:source_factorial_effects}
+\begin{tabular}{llrrrrrr}
+\toprule
+Backend & Source & $\Delta U$ & 95\% CI & $p_{\mathrm{Holm}}$ & $\Delta$Pass@1 (pp) & 95\% CI (pp) & $p_{\mathrm{Holm}}$ \\
+\midrule
+GPT & API & 0.002 & [-0.029, 0.040] & 1.000 & 8.3 & [-1.7, 19.2] & 0.623 \\
+GPT & Context & 0.003 & [-0.040, 0.050] & 1.000 & 0.0 & [-22.5, 20.8] & 0.984 \\
+GPT & Similar code & -0.018 & [-0.052, 0.012] & 1.000 & -8.3 & [-21.7, 5.0] & 0.623 \\
+\midrule
+Gemini & API & 0.003 & [-0.034, 0.035] & 1.000 & -5.0 & [-16.7, 3.3] & 1.000 \\
+Gemini & Context & 0.009 & [-0.018, 0.039] & 1.000 & -1.7 & [-9.2, 5.0] & 1.000 \\
+Gemini & Similar code & -0.010 & [-0.030, 0.007] & 1.000 & -1.7 & [-10.0, 7.5] & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Two-way evidence interactions. Effects use difference-in-differences over the third source.}
+\label{tab:source_interactions}
+\begin{tabular}{llrrrr}
+\toprule
+Backend & Interaction & $\Delta U$ & $p_{\mathrm{Holm}}$ & $\Delta$Pass@1 (pp) & $p_{\mathrm{Holm}}$ \\
+\midrule
+GPT & API:Context & 0.077 & 0.404 & 0.0 & 0.961 \\
+GPT & API:Similar & 0.020 & 0.657 & 10.0 & 0.611 \\
+GPT & Context:Similar & -0.044 & 0.085 & 33.3 & 0.032 \\
+\midrule
+Gemini & API:Context & 0.051 & 0.345 & -10.0 & 1.000 \\
+Gemini & API:Similar & -0.059 & 0.032 & 10.0 & 1.000 \\
+Gemini & Context:Similar & 0.029 & 0.389 & 10.0 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

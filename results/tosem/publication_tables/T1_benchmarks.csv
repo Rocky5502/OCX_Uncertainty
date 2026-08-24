@@ -1,0 +1,6 @@
+benchmark,tasks,repositories,languages,endpoint,role,status
+RepoExec-inline,32,multiple,Python,executable tests,retained two-family evaluation,EXISTING_VERIFIED_RESULT
+CoderEval API subset,13,multiple,Python/Java,API-set quality,retained API analysis,EXISTING_VERIFIED_RESULT
+ExecRepoBench-120,120,37,Python,executable tests,main confirmatory evaluation,COMPLETED
+CrossCodeEval-100,100,88,Python/Java/TypeScript/C#,native EM/edit/identifier F1,multilingual retrieval transfer,COMPLETED_NON_EXECUTABLE
+Multi-SWE-bench-Flash-35,35,--,multilingual,official container tests,issue-resolution stress test,BLOCKED_NO_DOCKER

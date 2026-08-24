@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Matched observed intervention effects on ExecRepoBench-120 selected-output correctness. Values are percentages; CIs are paired task bootstrap intervals.}
+\label{tab:intervention_effects}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Intervention & Before & After & $\Delta$ & 95\% CI & W/L/T \\
+\midrule
+gpt-4o-mini & Repository evidence provision & 16.7 & 25.8 & +9.2 & [2.5, 15.8] & 14/3/103 \\
+gpt-4o-mini & Ordinary verification and repair & 25.8 & 32.5 & +6.7 & [1.7, 11.7] & 9/1/110 \\
+gpt-4o-mini & Uncertainty-aware evidence and generation & 32.5 & 30.8 & -1.7 & [-5.0, 1.7] & 1/3/116 \\
+gemini-2.5-flash & Repository evidence provision & 22.5 & 25.8 & +3.3 & [-3.3, 10.0] & 11/7/102 \\
+gemini-2.5-flash & Ordinary verification and repair & 25.8 & 35.0 & +9.2 & [3.3, 15.0] & 12/1/107 \\
+gemini-2.5-flash & Uncertainty-aware evidence and generation & 35.0 & 36.7 & +1.7 & [-4.2, 7.5] & 8/6/106 \\
+claude-sonnet-5 & Repository evidence provision & 51.7 & 58.3 & +6.7 & [1.7, 12.5] & 10/2/108 \\
+claude-sonnet-5 & Ordinary verification and repair & 58.3 & 73.3 & +15.0 & [9.2, 21.7] & 18/0/102 \\
+claude-sonnet-5 & Uncertainty-aware evidence and generation & 73.3 & 74.2 & +0.8 & [-4.2, 5.8] & 5/4/111 \\
+qwen3-coder-plus & Repository evidence provision & 48.3 & 53.3 & +5.0 & [-0.8, 10.8] & 10/4/106 \\
+qwen3-coder-plus & Ordinary verification and repair & 53.3 & 60.8 & +7.5 & [3.3, 12.5] & 9/0/111 \\
+qwen3-coder-plus & Uncertainty-aware evidence and generation & 60.8 & 60.0 & -0.8 & [-4.2, 2.5] & 2/3/115 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,3932 @@
+{
+  "metadata": {
+    "backend": "gemini",
+    "base_url": "https://api.zhizengzeng.com/v1",
+    "conditions": [
+      "no_retrieval",
+      "all",
+      "only_api",
+      "only_context",
+      "only_similar_code",
+      "no_api",
+      "no_context",
+      "no_similar_code"
+    ],
+    "created_at": "2026-07-14T10:11:20.384195+00:00",
+    "dataset": "execrepobench",
+    "dataset_path": "input/execrepobench_testbacked.jsonl",
+    "describe_limit": 100,
+    "limit": 10,
+    "model": "gemini-2.5-flash",
+    "repo_root": null,
+    "rq": "RQ1"
+  },
+  "public_record": {
+    "generated_code_released": false,
+    "query_traces_released": false,
+    "source_payloads_released": false
+  },
+  "rows": [
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.6673399408658347,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.6700330376625061,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.8578105169037978,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.9557192511856556,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.8062440613905589,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6978869736194611,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.8160726885000865,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.747030109167099,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.811729935805003,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7253163456916809,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.8412732789913814,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8730330616235733,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6340003271897635,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5033349692821503,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "Chronyk/1",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.855456346521775,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.9439483992755413,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        true
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.8427732075254123,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8805327042937279,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.8548815536002319,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.9410744346678257,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.8233216891686123,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7832751125097275,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.661476089557012,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.6407137811183929,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.7912742296854656,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6230378150939941,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 1.0,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6862546255191169,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.7646064609289169,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.6,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.23095559747889638,
+          "mean_top_retrieval_score": 0.3075877442955971,
+          "n_kept": 28,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.6693685730298361,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.6801761984825134,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "Chronyk/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.2,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.21473188735544682,
+          "mean_top_retrieval_score": 0.3642680287361145,
+          "n_kept": 31,
+          "n_retrieved": 40,
+          "n_steps": 5
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.11675869841128587,
+          "mean_top_retrieval_score": 0.33687569499015807,
+          "n_kept": 25,
+          "n_retrieved": 40,
+          "n_steps": 5
+        }
+      },
+      "u": {
+        "aggregate": 0.819478679696719,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7640600651502609,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        true
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.8423229570190113,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8782814517617226,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.25660346867516637,
+          "mean_top_retrieval_score": 0.3608439117670059,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12125289114192128,
+          "mean_top_retrieval_score": 0.3575945571064949,
+          "n_kept": 20,
+          "n_retrieved": 32,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2762665313202888,
+          "mean_top_retrieval_score": 0.3594846799969673,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8240472863117855,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7869030982255936,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.25660346867516637,
+          "mean_top_retrieval_score": 0.3608439117670059,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.6927049805720649,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.7968582361936569,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12125289114192128,
+          "mean_top_retrieval_score": 0.3575945571064949,
+          "n_kept": 20,
+          "n_retrieved": 32,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8081653813521068,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7074935734272003,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2762665313202888,
+          "mean_top_retrieval_score": 0.3594846799969673,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8402495096127193,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8679142147302628,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12125289114192128,
+          "mean_top_retrieval_score": 0.3575945571064949,
+          "n_kept": 20,
+          "n_retrieved": 32,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2762665313202888,
+          "mean_top_retrieval_score": 0.3594846799969673,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.826473022500674,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7990317791700363,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.25660346867516637,
+          "mean_top_retrieval_score": 0.3608439117670059,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2762665313202888,
+          "mean_top_retrieval_score": 0.3594846799969673,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.6839773853619895,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.75322026014328,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "Chronyk/3",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.75,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.25660346867516637,
+          "mean_top_retrieval_score": 0.3608439117670059,
+          "n_kept": 23,
+          "n_retrieved": 32,
+          "n_steps": 4
+        },
+        "context": {
+          "avg_kept_per_step": 5.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.12125289114192128,
+          "mean_top_retrieval_score": 0.3575945571064949,
+          "n_kept": 20,
+          "n_retrieved": 32,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8154294172922771,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7438137531280518,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        false,
+        false
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.7293668786684673,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3135010600090027,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.882352941176471,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.10765129678389605,
+          "mean_top_retrieval_score": 0.22268583976170597,
+          "n_kept": 100,
+          "n_retrieved": 136,
+          "n_steps": 17
+        },
+        "context": {
+          "avg_kept_per_step": 5.705882352941177,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.17282997520969196,
+          "mean_top_retrieval_score": 0.31809716627878304,
+          "n_kept": 97,
+          "n_retrieved": 136,
+          "n_steps": 17
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.176470588235294,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2154192122260985,
+          "mean_top_retrieval_score": 0.33142950517289776,
+          "n_kept": 88,
+          "n_retrieved": 136,
+          "n_steps": 17
+        }
+      },
+      "u": {
+        "aggregate": 0.7362988988558452,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.34816116094589233,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        true
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.882352941176471,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.10765129678389605,
+          "mean_top_retrieval_score": 0.22268583976170597,
+          "n_kept": 100,
+          "n_retrieved": 136,
+          "n_steps": 17
+        }
+      },
+      "u": {
+        "aggregate": 0.7465721170107524,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.39952725172042847,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.705882352941177,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.17282997520969196,
+          "mean_top_retrieval_score": 0.31809716627878304,
+          "n_kept": 97,
+          "n_retrieved": 136,
+          "n_steps": 17
+        }
+      },
+      "u": {
+        "aggregate": 0.5996641357739767,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.33165401220321655,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 5.176470588235294,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2154192122260985,
+          "mean_top_retrieval_score": 0.33142950517289776,
+          "n_kept": 88,
+          "n_retrieved": 136,
+          "n_steps": 17
+        }
+      },
+      "u": {
+        "aggregate": 0.7274865428606669,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3040993809700012,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        true
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 5.705882352941177,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.17282997520969196,
+          "mean_top_retrieval_score": 0.31809716627878304,
+          "n_kept": 97,
+          "n_retrieved": 136,
+          "n_steps": 17
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.176470588235294,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2154192122260985,
+          "mean_top_retrieval_score": 0.33142950517289776,
+          "n_kept": 88,
+          "n_retrieved": 136,
+          "n_steps": 17
+        }
+      },
+      "u": {
+        "aggregate": 0.7378558437029521,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.355945885181427,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.882352941176471,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.10765129678389605,
+          "mean_top_retrieval_score": 0.22268583976170597,
+          "n_kept": 100,
+          "n_retrieved": 136,
+          "n_steps": 17
+        },
+        "similar_code": {
+          "avg_kept_per_step": 5.176470588235294,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.2154192122260985,
+          "mean_top_retrieval_score": 0.33142950517289776,
+          "n_kept": 88,
+          "n_retrieved": 136,
+          "n_steps": 17
+        }
+      },
+      "u": {
+        "aggregate": 0.7404016653696697,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.36867499351501465,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "shortuuid/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 5.882352941176471,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.10765129678389605,
+          "mean_top_retrieval_score": 0.22268583976170597,
+          "n_kept": 100,
+          "n_retrieved": 136,
+          "n_steps": 17
+        },
+        "context": {
+          "avg_kept_per_step": 5.705882352941177,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.17282997520969196,
+          "mean_top_retrieval_score": 0.31809716627878304,
+          "n_kept": 97,
+          "n_retrieved": 136,
+          "n_steps": 17
+        }
+      },
+      "u": {
+        "aggregate": 0.7601482788721721,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.46740806102752686,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.6666666666666667,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        true,
+        false,
+        true
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.7340889970461528,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3371116518974304,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.08546936248118679,
+          "mean_top_retrieval_score": 0.16735894978046417,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1660657476944228,
+          "mean_top_retrieval_score": 0.2792096237341563,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1981633435934782,
+          "mean_top_retrieval_score": 0.26003653804461163,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7560383121172588,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4468582272529602,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.33333333333333337,
+        "pass@3": 1.0,
+        "pass@5": 1.0
+      },
+      "pass_rate_variance": 0.22222222222222224,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        true,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.08546936248118679,
+          "mean_top_retrieval_score": 0.16735894978046417,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7280980269114177,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3071568012237549,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1660657476944228,
+          "mean_top_retrieval_score": 0.2792096237341563,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7636944929758709,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4851391315460205,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1981633435934782,
+          "mean_top_retrieval_score": 0.26003653804461163,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7446682254473369,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.39000779390335083,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1660657476944228,
+          "mean_top_retrieval_score": 0.2792096237341563,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1981633435934782,
+          "mean_top_retrieval_score": 0.26003653804461163,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7903618435064952,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6184758841991425,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.08546936248118679,
+          "mean_top_retrieval_score": 0.16735894978046417,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.1981633435934782,
+          "mean_top_retrieval_score": 0.26003653804461163,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7336010853449504,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.33467209339141846,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "shortuuid/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": 1.0,
+          "mean_retrieval_score": 0.08546936248118679,
+          "mean_top_retrieval_score": 0.16735894978046417,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 6.0,
+          "avg_retrieved_per_step": 8.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.1660657476944228,
+          "mean_top_retrieval_score": 0.2792096237341563,
+          "n_kept": 18,
+          "n_retrieved": 24,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7518262426058452,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.42579787969589233,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.795473180214564,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6440325677394867,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        },
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.6171953996022543,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.4193103313446045,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8287961016098659,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8106471747159958,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.7837416569391887,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5853749513626099,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.6524532874425253,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5955997705459595,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8338100622097652,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8357169777154922,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.7569760481516521,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.45154690742492676,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "workdays/1",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        },
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.7682744125525157,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.508038729429245,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.8201510022083919,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7674216777086258,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16640696715977454,
+          "mean_top_retrieval_score": 0.2604459747672081,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7896127204100292,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6147302687168121,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.8311117420593899,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8222253769636154,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16640696715977454,
+          "mean_top_retrieval_score": 0.2604459747672081,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.6695827503999076,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.6812470853328705,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.8198026965061824,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7656801491975784,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16640696715977454,
+          "mean_top_retrieval_score": 0.2604459747672081,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7784724692503612,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5590290129184723,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.7718206385771434,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5257698595523834,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "workdays/2",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 6
+        },
+        "context": {
+          "avg_kept_per_step": 2.0,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.16640696715977454,
+          "mean_top_retrieval_score": 0.2604459747672081,
+          "n_kept": 12,
+          "n_retrieved": 18,
+          "n_steps": 6
+        }
+      },
+      "u": {
+        "aggregate": 0.8277606884638469,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.8054701089859009,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.7533006469408672,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4331699013710022,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        },
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.7951990226904552,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6426617801189423,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.7473000566164654,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.4031669497489929,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.7661590735117595,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.49746203422546387,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8013185600439708,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6732594668865204,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.8130905727545421,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7321195304393768,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.5418907841046652,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.042787253856658936,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "workdays/3",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 4
+        },
+        "context": {
+          "avg_kept_per_step": 2.75,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.022585108876228333,
+          "mean_top_retrieval_score": 0.04072720184922218,
+          "n_kept": 11,
+          "n_retrieved": 12,
+          "n_steps": 4
+        }
+      },
+      "u": {
+        "aggregate": 0.616941781838735,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.41804224252700806,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.6311332186063132,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.4889994263648987,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 2.3333333333333335,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14538667268223235,
+          "mean_top_retrieval_score": 0.18713521460692087,
+          "n_kept": 7,
+          "n_retrieved": 9,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7425772945086162,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3795531392097473,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7896341661612194,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6148374974727631,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.3333333333333335,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14538667268223235,
+          "mean_top_retrieval_score": 0.18713521460692087,
+          "n_kept": 7,
+          "n_retrieved": 9,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7333728114763897,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3335307240486145,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7951182822386424,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6422580778598785,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.3333333333333335,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14538667268223235,
+          "mean_top_retrieval_score": 0.18713521460692087,
+          "n_kept": 7,
+          "n_retrieved": 9,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.6420483668645224,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5435751676559448,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.746232024828593,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.39782679080963135,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "workdays/4",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 3
+        },
+        "context": {
+          "avg_kept_per_step": 2.3333333333333335,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.14538667268223235,
+          "mean_top_retrieval_score": 0.18713521460692087,
+          "n_kept": 7,
+          "n_retrieved": 9,
+          "n_steps": 3
+        }
+      },
+      "u": {
+        "aggregate": 0.7905778626600902,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6195559799671173,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "all",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        },
+        "context": {
+          "avg_kept_per_step": 2.727272727272727,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.052367890648769615,
+          "mean_top_retrieval_score": 0.07279332456263629,
+          "n_kept": 30,
+          "n_retrieved": 33,
+          "n_steps": 11
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        }
+      },
+      "u": {
+        "aggregate": 0.7746391455332439,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.5398623943328857,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context"
+      ],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.727272727272727,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.052367890648769615,
+          "mean_top_retrieval_score": 0.07279332456263629,
+          "n_kept": 30,
+          "n_retrieved": 33,
+          "n_steps": 11
+        }
+      },
+      "u": {
+        "aggregate": 0.8181636492411296,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7574849128723145,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "similar_code"
+      ],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        }
+      },
+      "u": {
+        "aggregate": 0.8024232308069865,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6787828207015991,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "context",
+        "similar_code"
+      ],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "context": {
+          "avg_kept_per_step": 2.727272727272727,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.052367890648769615,
+          "mean_top_retrieval_score": 0.07279332456263629,
+          "n_kept": 30,
+          "n_retrieved": 33,
+          "n_steps": 11
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        }
+      },
+      "u": {
+        "aggregate": 0.6381458183129629,
+        "self_consistency": 0.33333333333333337,
+        "semantic_variance": 0.5240624248981476,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_context",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "similar_code"
+      ],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        },
+        "similar_code": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        }
+      },
+      "u": {
+        "aggregate": 0.8064935902754466,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6991346180438995,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_similar_code",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api",
+        "context"
+      ],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": false,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        },
+        "context": {
+          "avg_kept_per_step": 2.727272727272727,
+          "avg_retrieved_per_step": 3.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": 0.052367890648769615,
+          "mean_top_retrieval_score": 0.07279332456263629,
+          "n_kept": 30,
+          "n_retrieved": 33,
+          "n_steps": 11
+        }
+      },
+      "u": {
+        "aggregate": 0.8193161020676296,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.7632471770048141,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "no_retrieval",
+      "correctness_mode": "repository_tests",
+      "enabled": [],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {},
+      "u": {
+        "aggregate": 0.7415614406267803,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.3744738698005676,
+        "token_entropy": 1.0
+      }
+    },
+    {
+      "condition": "only_api",
+      "correctness_mode": "repository_tests",
+      "enabled": [
+        "api"
+      ],
+      "example_id": "workdays/0",
+      "pass_at_k": {
+        "pass@1": 0.0,
+        "pass@3": 0.0,
+        "pass@5": 0.0
+      },
+      "pass_rate_variance": 0.0,
+      "passed": true,
+      "sample_correctness": [
+        false,
+        false,
+        false
+      ],
+      "source_diagnostics": {
+        "api": {
+          "avg_kept_per_step": 0.0,
+          "avg_retrieved_per_step": 0.0,
+          "mean_knowledge_uncertainty": null,
+          "mean_retrieval_score": null,
+          "mean_top_retrieval_score": null,
+          "n_kept": 0,
+          "n_retrieved": 0,
+          "n_steps": 11
+        }
+      },
+      "u": {
+        "aggregate": 0.8053589860598247,
+        "self_consistency": 0.6666666666666667,
+        "semantic_variance": 0.6934615969657898,
+        "token_entropy": 1.0
+      }
+    }
+  ],
+  "summary": {
+    "api": {
+      "delta_pass_at_1": -0.04999999999999999,
+      "delta_pass_at_1_ci95": [
+        -0.16666666666666666,
+        0.03333333333333334
+      ],
+      "delta_pass_at_1_p_holm": 1.0,
+      "delta_u_ci95": [
+        -0.03438007865970333,
+        0.034681233129464084
+      ],
+      "delta_u_p_holm": 1.0,
+      "delta_u_p_randomization": 0.8926829268292683,
+      "delta_u_present_minus_absent": 0.002637485234687734,
+      "mean_pass_rate_variance_when_absent": 0.044444444444444446,
+      "mean_pass_rate_variance_when_present": 0.06666666666666668,
+      "mean_u_when_absent": 0.7587978650877873,
+      "mean_u_when_present": 0.7614353503224751,
+      "n_paired_tasks": 10,
+      "spearman_passed": {
+        "p": 0.8212663217578983,
+        "rho": -0.025657900289539272
+      },
+      "spearman_uncertainty": {
+        "p": 0.8488087226825707,
+        "rho": 0.02165232674872103
+      }
+    },
+    "condition_summary": {
+      "all": {
+        "mean_uncertainty": 0.7748300150533518,
+        "n": 10,
+        "pass@1": 0.16666666666666669,
+        "pass@3": 0.3,
+        "pass@5": 0.3
+      },
+      "no_api": {
+        "mean_uncertainty": 0.7587785903612774,
+        "n": 10,
+        "pass@1": 0.23333333333333334,
+        "pass@3": 0.3,
+        "pass@5": 0.3
+      },
+      "no_context": {
+        "mean_uncertainty": 0.708476212223371,
+        "n": 10,
+        "pass@1": 0.2,
+        "pass@3": 0.3,
+        "pass@5": 0.3
+      },
+      "no_retrieval": {
+        "mean_uncertainty": 0.7557511469721796,
+        "n": 10,
+        "pass@1": 0.2666666666666667,
+        "pass@3": 0.5,
+        "pass@5": 0.5
+      },
+      "no_similar_code": {
+        "mean_uncertainty": 0.7825209812571605,
+        "n": 10,
+        "pass@1": 0.1,
+        "pass@3": 0.2,
+        "pass@5": 0.2
+      },
+      "only_api": {
+        "mean_uncertainty": 0.7799141927560173,
+        "n": 10,
+        "pass@1": 0.2,
+        "pass@3": 0.4,
+        "pass@5": 0.4
+      },
+      "only_context": {
+        "mean_uncertainty": 0.7420092729727428,
+        "n": 10,
+        "pass@1": 0.23333333333333334,
+        "pass@3": 0.3,
+        "pass@5": 0.3
+      },
+      "only_similar_code": {
+        "mean_uncertainty": 0.7786524500449499,
+        "n": 10,
+        "pass@1": 0.13333333333333336,
+        "pass@3": 0.2,
+        "pass@5": 0.2
+      }
+    },
+    "context": {
+      "delta_pass_at_1": -0.01666666666666667,
+      "delta_pass_at_1_ci95": [
+        -0.09166666666666667,
+        0.05
+      ],
+      "delta_pass_at_1_p_holm": 1.0,
+      "delta_u_ci95": [
+        -0.017533008439000696,
+        0.03948011793801559
+      ],
+      "delta_u_p_holm": 1.0,
+      "delta_u_p_randomization": 0.6078048780487805,
+      "delta_u_present_minus_absent": 0.008836214412003749,
+      "mean_pass_rate_variance_when_absent": 0.06666666666666668,
+      "mean_pass_rate_variance_when_present": 0.044444444444444446,
+      "mean_u_when_absent": 0.7556985004991295,
+      "mean_u_when_present": 0.7645347149111331,
+      "n_paired_tasks": 10,
+      "spearman_passed": {
+        "p": 0.11090281296057035,
+        "rho": -0.17960530202677488
+      },
+      "spearman_uncertainty": {
+        "p": 0.4279741722455966,
+        "rho": 0.08985715600719225
+      }
+    },
+    "factorial": {
+      "ci": "task bootstrap, 10000 resamples",
+      "inference_unit": "task",
+      "pass@1": {
+        "main_effects": {
+          "api": {
+            "ci95": [
+              -0.16666666666666666,
+              0.03333333333333334
+            ],
+            "effect_present_minus_absent": -0.04999999999999999,
+            "mean_when_absent": 0.2166666666666667,
+            "mean_when_present": 0.16666666666666669,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.6253658536585366
+          },
+          "context": {
+            "ci95": [
+              -0.09166666666666667,
+              0.05
+            ],
+            "effect_present_minus_absent": -0.01666666666666667,
+            "mean_when_absent": 0.2,
+            "mean_when_present": 0.18333333333333335,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.7502439024390244
+          },
+          "similar_code": {
+            "ci95": [
+              -0.1,
+              0.07500000000000001
+            ],
+            "effect_present_minus_absent": -0.01666666666666667,
+            "mean_when_absent": 0.2,
+            "mean_when_present": 0.18333333333333335,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.8751219512195122
+          }
+        },
+        "metric": "pass@1",
+        "two_way_interactions": {
+          "api:context": {
+            "ci95": [
+              -0.2833333333333334,
+              0.06666666666666668
+            ],
+            "effect": -0.1,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.4380487804878049
+          },
+          "api:similar_code": {
+            "ci95": [
+              -0.06666666666666665,
+              0.2833333333333333
+            ],
+            "effect": 0.1,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.375609756097561
+          },
+          "context:similar_code": {
+            "ci95": [
+              -0.16666666666666669,
+              0.3666666666666667
+            ],
+            "effect": 0.1,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.5629268292682926
+          }
+        }
+      },
+      "pass@3": {
+        "main_effects": {
+          "api": {
+            "ci95": [
+              -0.1,
+              0.05
+            ],
+            "effect_present_minus_absent": -0.025,
+            "mean_when_absent": 0.325,
+            "mean_when_present": 0.3,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 1.0
+          },
+          "context": {
+            "ci95": [
+              -0.2,
+              0.05
+            ],
+            "effect_present_minus_absent": -0.075,
+            "mean_when_absent": 0.35,
+            "mean_when_present": 0.275,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.5004878048780488
+          },
+          "similar_code": {
+            "ci95": [
+              -0.2,
+              0.05
+            ],
+            "effect_present_minus_absent": -0.075,
+            "mean_when_absent": 0.35,
+            "mean_when_present": 0.275,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.5004878048780488
+          }
+        },
+        "metric": "pass@3",
+        "two_way_interactions": {
+          "api:context": {
+            "ci95": [
+              -0.3,
+              0.25
+            ],
+            "effect": -0.05,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 1.0
+          },
+          "api:similar_code": {
+            "ci95": [
+              -0.1,
+              0.4
+            ],
+            "effect": 0.15,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.5004878048780488
+          },
+          "context:similar_code": {
+            "ci95": [
+              -0.15,
+              0.65
+            ],
+            "effect": 0.25,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.375609756097561
+          }
+        }
+      },
+      "pass@5": {
+        "main_effects": {
+          "api": {
+            "ci95": [
+              -0.1,
+              0.05
+            ],
+            "effect_present_minus_absent": -0.025,
+            "mean_when_absent": 0.325,
+            "mean_when_present": 0.3,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 1.0
+          },
+          "context": {
+            "ci95": [
+              -0.2,
+              0.05
+            ],
+            "effect_present_minus_absent": -0.075,
+            "mean_when_absent": 0.35,
+            "mean_when_present": 0.275,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.5004878048780488
+          },
+          "similar_code": {
+            "ci95": [
+              -0.2,
+              0.05
+            ],
+            "effect_present_minus_absent": -0.075,
+            "mean_when_absent": 0.35,
+            "mean_when_present": 0.275,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.5004878048780488
+          }
+        },
+        "metric": "pass@5",
+        "two_way_interactions": {
+          "api:context": {
+            "ci95": [
+              -0.3,
+              0.25
+            ],
+            "effect": -0.05,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 1.0
+          },
+          "api:similar_code": {
+            "ci95": [
+              -0.1,
+              0.4
+            ],
+            "effect": 0.15,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.5004878048780488
+          },
+          "context:similar_code": {
+            "ci95": [
+              -0.15,
+              0.65
+            ],
+            "effect": 0.25,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.375609756097561
+          }
+        }
+      },
+      "test": "paired task-level sign-flip randomization with Holm correction",
+      "uncertainty": {
+        "main_effects": {
+          "api": {
+            "ci95": [
+              -0.03438007865970333,
+              0.034681233129464084
+            ],
+            "effect_present_minus_absent": 0.002637485234687734,
+            "mean_when_absent": 0.7587978650877873,
+            "mean_when_present": 0.7614353503224751,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.8926829268292683
+          },
+          "context": {
+            "ci95": [
+              -0.017533008439000696,
+              0.03948011793801559
+            ],
+            "effect_present_minus_absent": 0.008836214412003749,
+            "mean_when_absent": 0.7556985004991295,
+            "mean_when_present": 0.7645347149111331,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.6078048780487805
+          },
+          "similar_code": {
+            "ci95": [
+              -0.03044526347207527,
+              0.007288800607280165
+            ],
+            "effect_present_minus_absent": -0.00986458156878751,
+            "mean_when_absent": 0.765048898489525,
+            "mean_when_present": 0.7551843169207375,
+            "n_tasks": 10,
+            "p_holm": 1.0,
+            "p_randomization": 0.39707317073170734
+          }
+        },
+        "metric": "uncertainty",
+        "two_way_interactions": {
+          "api:context": {
+            "ci95": [
+              -0.016922052177290127,
+              0.11342318312544367
+            ],
+            "effect": 0.051288162507116784,
+            "n_tasks": 10,
+            "p_holm": 0.34536585365853656,
+            "p_randomization": 0.17268292682926828
+          },
+          "api:similar_code": {
+            "ci95": [
+              -0.09375407477933911,
+              -0.025595733170087172
+            ],
+            "effect": -0.05939978359887997,
+            "n_tasks": 10,
+            "p_holm": 0.03219512195121951,
+            "p_randomization": 0.010731707317073172
+          },
+          "context:similar_code": {
+            "ci95": [
+              -0.032516376225277775,
+              0.0883185634141167
+            ],
+            "effect": 0.02880751432230076,
+            "n_tasks": 10,
+            "p_holm": 0.38926829268292684,
+            "p_randomization": 0.38926829268292684
+          }
+        }
+      }
+    },
+    "similar_code": {
+      "delta_pass_at_1": -0.01666666666666667,
+      "delta_pass_at_1_ci95": [
+        -0.1,
+        0.07500000000000001
+      ],
+      "delta_pass_at_1_p_holm": 1.0,
+      "delta_u_ci95": [
+        -0.03044526347207527,
+        0.007288800607280165
+      ],
+      "delta_u_p_holm": 1.0,
+      "delta_u_p_randomization": 0.39707317073170734,
+      "delta_u_present_minus_absent": -0.00986458156878751,
+      "mean_pass_rate_variance_when_absent": 0.06666666666666668,
+      "mean_pass_rate_variance_when_present": 0.044444444444444446,
+      "mean_u_when_absent": 0.765048898489525,
+      "mean_u_when_present": 0.7551843169207375,
+      "n_paired_tasks": 10,
+      "spearman_passed": {
+        "p": 0.49736216435618713,
+        "rho": 0.07697370086861781
+      },
+      "spearman_uncertainty": {
+        "p": 0.5605561338532006,
+        "rho": -0.06603959658359915
+      }
+    }
+  }
+}

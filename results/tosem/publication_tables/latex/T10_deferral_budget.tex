@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Simulated team success under a 75\% reviewer-success assumption. These values are offline simulations, not observed developer performance.}
+\label{tab:deferral_budget_final}
+\begin{tabular}{llrrr}
+\toprule
+Model & Policy & 10\% budget & 20\% budget & 50\% budget \\
+\midrule
+GPT-4o-mini & Random & 35.7 & 40.3 & 56.5 \\
+GPT-4o-mini & Pre-repair test & 37.8 & 44.8 & 66.0 \\
+GPT-4o-mini & Aggregate uncertainty & 37.8 & 43.2 & 58.7 \\
+GPT-4o-mini & Source-specific & 36.5 & 41.3 & 58.7 \\
+GPT-4o-mini & Oracle & 37.8 & 45.5 & 68.5 \\
+\midrule
+Gemini 2.5 Flash & Random & 41.5 & 45.8 & 59.7 \\
+Gemini 2.5 Flash & Pre-repair test & 43.7 & 50.8 & 70.3 \\
+Gemini 2.5 Flash & Aggregate uncertainty & 42.5 & 47.2 & 62.3 \\
+Gemini 2.5 Flash & Source-specific & 42.5 & 44.7 & 60.7 \\
+Gemini 2.5 Flash & Oracle & 43.7 & 51.3 & 74.8 \\
+\midrule
+Claude Sonnet 5 & Random & 76.3 & 78.0 & 84.7 \\
+Claude Sonnet 5 & Pre-repair test & 80.0 & 85.5 & 93.3 \\
+Claude Sonnet 5 & Aggregate uncertainty & 77.3 & 79.5 & 90.2 \\
+Claude Sonnet 5 & Source-specific & 77.2 & 77.5 & 84.8 \\
+Claude Sonnet 5 & Oracle & 82.3 & 89.7 & 93.3 \\
+\midrule
+Qwen3-Coder-Plus & Random & 62.8 & 65.7 & 75.0 \\
+Qwen3-Coder-Plus & Pre-repair test & 66.2 & 73.3 & 89.2 \\
+Qwen3-Coder-Plus & Aggregate uncertainty & 64.2 & 69.3 & 81.0 \\
+Qwen3-Coder-Plus & Source-specific & 63.0 & 67.0 & 75.2 \\
+Qwen3-Coder-Plus & Oracle & 67.3 & 75.3 & 89.2 \\
+\bottomrule
+\end{tabular}
+\end{table*}

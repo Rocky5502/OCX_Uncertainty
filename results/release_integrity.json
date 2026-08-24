@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "automated_reviewer_episodes": 144,
+    "automated_reviewer_evaluable": 134,
+    "automated_reviewer_missing": 10,
+    "crosscodeeval_tasks": 100,
+    "execrepobench_tasks": 120,
+    "rq1_metric_records": 160,
+    "rq2_metric_records": 120,
+    "technical_cells": 2720
+  },
+  "issues": [],
+  "passed": true
+}

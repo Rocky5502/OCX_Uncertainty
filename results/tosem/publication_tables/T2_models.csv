@@ -1,0 +1,5 @@
+family,model,gateway,temperature,max_tokens,candidates,repair_rounds,status
+GPT-4o-mini,gpt-4o-mini,zhizengzeng,0.7,2048,5,2,CONFIRMATORY_COMPLETED
+Gemini,gemini-2.5-flash,zhizengzeng,0.7,2048,5,2,CONFIRMATORY_COMPLETED
+Claude,claude-sonnet-5,zhizengzeng,,2048,5,2,CONFIRMATORY_COMPLETED
+Qwen3-Coder-Plus,qwen3-coder-plus,zhizengzeng,0.7,2048,5,2,CONFIRMATORY_COMPLETED

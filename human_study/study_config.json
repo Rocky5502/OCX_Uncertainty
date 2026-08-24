@@ -1,0 +1,45 @@
+{
+  "protocol_version": "opencoderx_human_review_v2_invitation_pool",
+  "status": "TECHNICAL_FREEZE_PENDING_ETHICS",
+  "generator_model": "gpt-4o-mini",
+  "participants_planned": 40,
+  "participants_target_analyzable": 36,
+  "invitation_codes_planned": 100,
+  "tasks_per_participant": 12,
+  "task_time_limit_seconds": 360,
+  "conditions": [
+    "generic_review",
+    "uncertainty_display",
+    "targeted_guidance"
+  ],
+  "assignment_groups": 3,
+  "selection_seed": 20260820,
+  "analysis_seed": 20260821,
+  "bootstrap_resamples": 10000,
+  "incorrect_cases_per_signal": 2,
+  "correct_controls": 4,
+  "source_task_ids": {
+    "api": [
+      "execrepobench-0585-60675d8cc6",
+      "execrepobench-0391-13e55956a5"
+    ],
+    "context": [
+      "execrepobench-1148-02d99ed352",
+      "execrepobench-1123-0f6c5532f9"
+    ],
+    "similar_code": [
+      "execrepobench-0755-0fbea6cf43",
+      "execrepobench-0694-6f4dcdab75"
+    ],
+    "generation": [
+      "execrepobench-0226-0b9ff5af61",
+      "execrepobench-0894-4434c22736"
+    ],
+    "correct_control": [
+      "execrepobench-1063-51b649a44a",
+      "execrepobench-0670-33a9fa36f8",
+      "execrepobench-0428-a9da215626",
+      "execrepobench-0839-6b59568b37"
+    ]
+  }
+}

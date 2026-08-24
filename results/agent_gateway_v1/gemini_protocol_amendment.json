@@ -1,0 +1,14 @@
+{
+  "decision_at_utc": "2026-08-21T08:27:21.654490+00:00",
+  "agent_id": "G003",
+  "family": "Gemini",
+  "superseded_model_id": "gemini-2.5-flash",
+  "replacement_model_id": "gemini-2.5-flash-lite",
+  "superseded_missing_records": 9,
+  "superseded_total_records": 12,
+  "correctness_fields_were_present": true,
+  "selection_basis_used_correctness": false,
+  "selection_basis": "technical missingness above 50% only",
+  "superseded_record": "results/agent_gateway_v1/superseded_majority_missing_gemini.jsonl",
+  "reason": "gemini-2.5-flash produced 9/12 unevaluable responses under the fixed 2,048-token output budget, exceeding the protocol-amendment majority-missing rule."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "APPROVED_FOR_RECRUITMENT",
+  "protocol_version": "opencoderx_human_review_v2_invitation_pool",
+  "institution": "REPLACE",
+  "ethics_body_or_authority": "REPLACE",
+  "protocol_identifier": "REPLACE",
+  "determination": "REPLACE_WITH_APPROVED_OR_EXEMPT",
+  "determination_date": "YYYY-MM-DD",
+  "principal_investigator": "REPLACE",
+  "contact": "REPLACE",
+  "compensation": "REPLACE",
+  "retention_period": "REPLACE"
+}

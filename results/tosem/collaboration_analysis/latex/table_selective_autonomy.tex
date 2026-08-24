@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Fixed-threshold uncertainty-only OpenCoderX decisions on ExecRepoBench-120. Acc. is correctness among autonomous outputs; Capture is the fraction of final failures routed to review or abstention. No executable outcome enters the decision score. Values are percentages.}
+\label{tab:selective_autonomy}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Auto. & Review & Abstain & Acc./Capture \\
+\midrule
+gpt-4o-mini & 30.0 & 70.0 & 0.0 & 41.7/74.7 \\
+gemini-2.5-flash & 25.8 & 74.2 & 0.0 & 45.2/77.6 \\
+claude-sonnet-5 & 33.3 & 66.7 & 0.0 & 90.0/87.1 \\
+qwen3-coder-plus & 37.5 & 62.5 & 0.0 & 64.4/66.7 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use OpenCoderX, please cite the associated archival paper and this software artifact."
+title: "OpenCoderX: Uncertainty-Aware Repository-Level Code Generation"
+type: software
+version: 1.0.0
+date-released: 2026-08-24
+url: "https://github.com/Rocky5502/OCX_Uncertainty"
+repository-code: "https://github.com/Rocky5502/OCX_Uncertainty"
+license: MIT
+authors:
+  - family-names: Sah
+    given-names: Chandan Kumar
+    orcid: "https://orcid.org/0009-0002-4017-7970"
+  - family-names: Zhang
+    given-names: Li
+    orcid: "https://orcid.org/0000-0002-2258-5893"
+  - family-names: Lian
+    given-names: Xiaoli
+    orcid: "https://orcid.org/0000-0002-6100-7068"

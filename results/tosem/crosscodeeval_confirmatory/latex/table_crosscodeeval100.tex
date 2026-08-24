@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{CrossCodeEval-100 native completion results. EM denotes exact match, Edit denotes normalized edit similarity, and Id-F1 denotes identifier F1. These are native completion metrics, not executable functional correctness.}
+\label{tab:crosscodeeval100}
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Method & Sel. EM & Sel. Edit & Sel. Id-F1 & Cand. EM & Cand. Edit & Cand. Id-F1 \\
+\midrule
+gpt-4o-mini & Direct Generation & 6.0 & 58.4 & 43.9 & 6.8 & 58.9 & 45.4 \\
+gpt-4o-mini & Cross-file Context RAG & 15.0 & 65.9 & 54.7 & 16.4 & 65.8 & 54.7 \\
+\midrule
+gemini-2.5-flash & Direct Generation & 5.0 & 48.5 & 37.4 & 5.6 & 48.4 & 36.3 \\
+gemini-2.5-flash & Cross-file Context RAG & 10.0 & 50.9 & 42.9 & 10.6 & 52.0 & 43.6 \\
+\midrule
+claude-sonnet-5 & Direct Generation & 16.0 & 61.6 & 52.8 & 17.0 & 62.3 & 53.4 \\
+claude-sonnet-5 & Cross-file Context RAG & 27.0 & 64.8 & 59.4 & 28.0 & 68.1 & 62.0 \\
+\midrule
+qwen3-coder-plus & Direct Generation & 7.0 & 58.4 & 44.7 & 7.0 & 58.6 & 45.0 \\
+qwen3-coder-plus & Cross-file Context RAG & 17.0 & 65.9 & 57.1 & 15.6 & 65.0 & 55.5 \\
+\bottomrule
+\end{tabular}
+\end{table*}

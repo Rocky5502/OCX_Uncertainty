@@ -1,0 +1,73 @@
+{
+  "status": "FROZEN_APPROVED",
+  "frozen_at": "2026-08-10T19:04:08.462034+00:00",
+  "paper_eligible": true,
+  "scientific_protocol": {
+    "protocol_version": "opencoderx_tosem_confirmatory_v1",
+    "dataset": "ExecRepoBench-120",
+    "tasks": 120,
+    "models": [
+      "gpt-4o-mini",
+      "gemini-2.5-flash",
+      "claude-sonnet-5",
+      "qwen3-coder-plus"
+    ],
+    "methods": [
+      "Direct Generation",
+      "Standard RAG",
+      "RAG + Verify/Repair",
+      "OpenCoderX"
+    ],
+    "candidate_count": 5,
+    "temperature": 0.7,
+    "claude_temperature": null,
+    "max_output_tokens": 2048,
+    "max_repair_rounds": 2,
+    "repair_prompt_budget_chars": {
+      "task": 24000,
+      "failed_code": 32000,
+      "diagnostics": 32000,
+      "policy": "frozen_head_tail_character_budget_v1"
+    },
+    "retrieval_budget": {
+      "api_top_k": 8,
+      "context_top_k": 8,
+      "similar_code_top_k": 8,
+      "fused_top_k": 10,
+      "opencoderx_whole_task_anchor": true,
+      "opencoderx_source_balanced_fusion": true,
+      "opencoderx_max_source_fraction": 0.5
+    },
+    "primary_outcomes": [
+      "pass@1",
+      "selected_output_correctness"
+    ],
+    "secondary_passk": [
+      "pass@3",
+      "pass@5"
+    ],
+    "paired_tests": [
+      "exact McNemar",
+      "paired bootstrap 95% CI"
+    ],
+    "multiple_testing": "Holm correction within each declared comparison family"
+  },
+  "scientific_protocol_sha256": "1e227b9f1dae6f340ee737f034df15076e2d20b9b563a678b9ea6c9f8ed16e17",
+  "file_sha256": {
+    "data/manifests/execrepobench_opencoderx_120_v1.jsonl": "4b14e4a648e80b11c7a7011b6c9f878fcae5ec243f5c1b260e905e693c3f459d",
+    "data/indexes/execrepobench_120_repository_knowledge_v1.jsonl": "4289611e2788dd51492ea3ac6aec62eec01137e5664feca5543bd8332b0da4f7",
+    "configs/tosem/models/gpt4o_mini.yaml": "acc275352ab6884815737b6beeb11e4365dfe63597488eaae6bb163622ad3b37",
+    "configs/tosem/models/gemini_2_5_flash.yaml": "5e369611c2d756577bb5f741e2774430f75a5ae9c7effc808538d61a983dd69e",
+    "configs/tosem/models/claude_sonnet_5.yaml": "90087c28d0e8b66aaa7a120d5e47935d140c811cd8c9e0d43a03bc4e2b5ca57b",
+    "configs/tosem/models/qwen3_coder_plus.yaml": "7322cc6121040bf3554ec7ab89271367ed964e48889d3d8eff9c0d6381ffb644",
+    "opencoder/pipeline.py": "656f11656f5ac094a458d9e323d3e8ac8c2b4edcda345525457406f094c4fa33",
+    "opencoder/phase5_verify/repair.py": "e900bc8de99f260cb1b06524e3c5e08d5d6d2f0da2f7e36af7696155eb665baf",
+    "opencoder/phase3_retrieval/score_filter.py": "864e0da38b68b9bd931400f3048400c501c3310856145fd0b7fa465d42723cd0",
+    "experiments/run_rq3.py": "033bcde19a1dbae28e8c4b8883232b9e2ad486b187cc040a6a3a94000c1a8cfb",
+    "docs/tosem/CONFIRMATORY_PROTOCOL.md": "f24a14630b6ca5e5c3f4c1a34d816ca4c94624fc3b367e2baee37dc5f6b8b7fe",
+    "docs/tosem/PREFREEZE_RETRIEVAL_CORRECTION.md": "dc5cdedfb999e8dd0c4ac2aa580ec69b478ab7675a9e28bc33f8c3bc98b1b8cb",
+    "docs/tosem/PROTOCOL_AMENDMENT_REPAIR_BUDGET.md": "c8f0a04c40cbb325cf622e4159832bc26ebe76232784d3b55e36b9c637c1160a",
+    "results/tosem/pilot/anchor_repilot_decision.json": "3e1cdd00761b9ca38812d4fc7c5f92233b43c4b73435bf65a376602bfaa13b68"
+  },
+  "operational_note": "Campaign caps were explicitly approved at USD 80 and CNY 65. Superseded pre-amendment API usage remains charged to these caps."
+}

@@ -1,0 +1,88 @@
+\begin{table*}[t]
+\centering
+\label{tab:rq4_api_count}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccccccc}
+\toprule
+\multirow{2}{*}{\textbf{LLM}}
+& \multirow{2}{*}{\textbf{Method}}
+& \multicolumn{3}{c}{\textbf{RepoExec}}
+& \multicolumn{3}{c}{\textbf{CoderEval}}
+& \multicolumn{3}{c}{\textbf{ExecRepoBench}} \\
+\cmidrule(lr){3-5}
+\cmidrule(lr){6-8}
+\cmidrule(lr){9-11}
+& & Over$\downarrow$ & Exact$\uparrow$ & Under$\downarrow$
+& Over$\downarrow$ & Exact$\uparrow$ & Under$\downarrow$
+& Over$\downarrow$ & Exact$\uparrow$ & Under$\downarrow$ \\
+\midrule
+GPT
+& Baseline RAG
+& 100.0 & 0.0 & 0.0
+& 47.4 & 15.8 & 36.8
+& 50.0 & 50.0 & 0.0 \\
+GPT
+& OpenCoder w/o Unc. Filter
+& 100.0 & 0.0 & 0.0
+& 47.4 & 15.8 & 36.8
+& 50.0 & 50.0 & 0.0 \\
+GPT
+& OpenCoder w/o API Refinement
+& 100.0 & 0.0 & 0.0
+& 47.4 & 10.5 & 42.1
+& 50.0 & 50.0 & 0.0 \\
+GPT
+& OpenCoder
+& \textbf{0.0} & \textbf{100.0} & \textbf{0.0}
+& 21.1 & \textbf{26.3} & 52.6
+& 50.0 & 50.0 & \textbf{0.0} \\
+GPT
+& Context Only
+& \textbf{0.0} & 7.1 & 92.9
+& \textbf{0.0} & 5.3 & 94.7
+& \textbf{0.0} & 70.0 & 30.0 \\
+GPT
+& API-informed Ref.
+& \textbf{0.0} & \textbf{100.0} & \textbf{0.0}
+& \textbf{0.0} & \textbf{100.0} & \textbf{0.0}
+& \textbf{0.0} & \textbf{100.0} & \textbf{0.0} \\
+\midrule
+Gemini
+& Baseline RAG
+& 100.0 & 0.0 & 0.0
+& 47.4 & 15.8 & 36.8
+& 50.0 & 50.0 & 0.0 \\
+Gemini
+& OpenCoder w/o Unc. Filter
+& 100.0 & 0.0 & 0.0
+& 47.4 & 15.8 & 36.8
+& 50.0 & 50.0 & 0.0 \\
+Gemini
+& OpenCoder w/o API Refinement
+& 92.9 & 7.1 & \textbf{0.0}
+& 47.4 & 15.8 & 36.8
+& 50.0 & 50.0 & 0.0 \\
+Gemini
+& OpenCoder
+& \textbf{0.0} & 92.9 & 7.1
+& 26.3 & \textbf{21.1} & 52.6
+& 50.0 & 50.0 & \textbf{0.0} \\
+Gemini
+& Context Only
+& \textbf{0.0} & 7.1 & 92.9
+& \textbf{0.0} & 5.3 & 94.7
+& \textbf{0.0} & 70.0 & 30.0 \\
+Gemini
+& API-informed Ref.
+& \textbf{0.0} & \textbf{100.0} & \textbf{0.0}
+& \textbf{0.0} & \textbf{100.0} & \textbf{0.0}
+& \textbf{0.0} & \textbf{100.0} & \textbf{0.0} \\
+\bottomrule
+\end{tabular}%
+}
+\caption{API retrieval count reliability across repository-level benchmarks.
+Values are percentages over 14 RepoExec, 19 CoderEval, and 10 ExecRepoBench
+tasks. Over, Exact, and Under indicate whether the number of retrieved APIs is
+larger than, equal to, or smaller than the ground-truth invoked API set,
+respectively. A value of 0.0 means that no task falls into that outcome.}
+\end{table*}

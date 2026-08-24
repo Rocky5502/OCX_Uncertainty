@@ -1,0 +1,19 @@
+{
+  "tables": 13,
+  "latex_files": [
+    "T10_deferral_budget.tex",
+    "T11_reviewer_sensitivity.tex",
+    "T12_interventions.tex",
+    "T13_resources.tex",
+    "T1_benchmark_characteristics.tex",
+    "T2_model_configurations.tex",
+    "T3_four_family_effectiveness.tex",
+    "T4_evidence_interactions.tex",
+    "T5_uncertainty_discrimination.tex",
+    "T6_matched_baseline.tex",
+    "T7_component_ablation.tex",
+    "T8_cross_language.tex",
+    "T9_cross_benchmark.tex"
+  ],
+  "status": "GENERATED_FROM_AUDITED_ARTIFACTS"
+}
