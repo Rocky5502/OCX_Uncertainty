@@ -22,15 +22,6 @@ OpenCoderX profiles repository knowledge, decomposes query uncertainty, retrieve
 
 A single confidence value cannot identify what is missing. OpenCoderX localizes risk to API knowledge, repository context, similar code, or generation, then converts that signal into an actionable collaboration decision.
 
-## Paper
-
-OpenCoderX extends the uncertainty-aware retrieval framework introduced in:
-
-> Chandan Kumar Sah, Li Zhang, and Xiaoli Lian. **Beyond "What to Retrieve": Uncertainty in Retrieval-Augmented Code Generation.** arXiv:2607.24884, 2026.
-
-[[arXiv](https://arxiv.org/abs/2607.24884)] [[PDF](https://arxiv.org/pdf/2607.24884)] [[DOI](https://doi.org/10.48550/arXiv.2607.24884)]
-
-The journal-first OpenCoderX study, *Knowing When to Ask: Uncertainty-Guided Human-AI Collaboration for Repository-Level Code Generation*, extends this foundation with four model families, cross-language evaluation, collaboration policies, and human and automated-reviewer protocols. Its archival link will be added when publicly available.
 
 ## Artifact At A Glance
 
@@ -288,7 +279,7 @@ Generated LaTeX tables are under `results/tosem/publication_tables/latex/`; vect
 - Generated code can be incorrect or insecure. Run tests, static analysis, licensing review, and human review before deployment.
 
 ## Citation
-
+Coming Soon!!!
 Citation metadata and the associated preprint citation are provided in [`CITATION.cff`](CITATION.cff). Please cite the paper and software artifact when using OpenCoderX. The repository contains no manuscript PDF.
 
 ## License And Third-Party Material
