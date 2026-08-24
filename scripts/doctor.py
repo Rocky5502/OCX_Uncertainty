@@ -41,9 +41,9 @@ def check(
 def gateway_catalog() -> tuple[set[str], str]:
     _load_dotenv(str(ROOT / ".env"))
     base = os.environ.get("OPENCODER_LLM_BASE_URL", "https://api.zhizengzeng.com/v1").rstrip("/")
-    key = os.environ.get("ZHIZENGZENG_API_KEY", "")
+    key = os.environ.get("OPENCODER_LLM_API_KEY", "")
     if not key:
-        return set(), "ZHIZENGZENG_API_KEY is missing"
+        return set(), "OPENCODER_LLM_API_KEY is missing"
     response = requests.get(
         base + "/models",
         headers={"Authorization": f"Bearer {key}"},

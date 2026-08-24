@@ -43,7 +43,7 @@ def main() -> int:
             "GEMINI_BASE_URL must resolve to generativelanguage.googleapis.com"
         )
 
-    shared = os.environ.get("ZHIZENGZENG_API_KEY")
+    shared = os.environ.get("OPENCODER_LLM_API_KEY")
     for name in ("OPENAI_API_KEY", "GEMINI_API_KEY"):
         value = os.environ.get(name)
         if not value or value.startswith("replace_with_"):
@@ -60,7 +60,7 @@ def main() -> int:
     print("Official-provider configuration is ready.")
     print("- OpenAI endpoint: api.openai.com")
     print("- Gemini endpoint: generativelanguage.googleapis.com")
-    print("- Credentials: present and distinct from the shared gateway key")
+    print("- Credentials: present and distinct from the compatible-endpoint key")
     return 0
 
 

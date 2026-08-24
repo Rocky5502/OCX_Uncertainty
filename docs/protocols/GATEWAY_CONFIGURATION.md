@@ -6,7 +6,7 @@ four frozen model families:
 ```text
 base URL environment variable: OPENCODER_LLM_BASE_URL
 expected URL: https://api.zhizengzeng.com/v1
-credential environment variable: ZHIZENGZENG_API_KEY
+credential environment variable: OPENCODER_LLM_API_KEY
 ```
 
 No direct `ANTHROPIC_API_KEY`, `DASHSCOPE_API_KEY`, `GEMINI_API_KEY`, or

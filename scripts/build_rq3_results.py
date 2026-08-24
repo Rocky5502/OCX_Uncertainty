@@ -1220,8 +1220,9 @@ def _write_readme(out_dir: Path) -> None:
 
 Install the project requirements in the existing virtual environment, then provide API keys through environment variables or `.env`:
 
-- `OPENAI_API_KEY` or `ZHIZENGZENG_API_KEY`
-- `GEMINI_API_KEY` or `ZHIZENGZENG_API_KEY`
+- `OPENAI_API_KEY` for the direct OpenAI backend
+- `GEMINI_API_KEY` for the direct Gemini backend
+- `OPENCODER_LLM_API_KEY` for an OpenAI-compatible endpoint
 - `OPENCODER_LLM_BASE_URL` for the OpenAI-compatible gateway
 
 Do not place API keys in source files or generated artifacts.

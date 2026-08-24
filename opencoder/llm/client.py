@@ -201,7 +201,7 @@ class LLMClient:
                 stacklevel=2,
             )
 
-        shared_key = os.environ.get("ZHIZENGZENG_API_KEY")
+        shared_key = os.environ.get("OPENCODER_LLM_API_KEY")
         if self.backend == "openai":
             self.api_key = os.environ.get("OPENAI_API_KEY") or shared_key
             logprob_override = os.environ.get("OPENCODER_LLM_LOGPROBS")
@@ -219,7 +219,7 @@ class LLMClient:
             key_name = {
                 "openai": "OPENAI_API_KEY",
                 "gemini": "GEMINI_API_KEY",
-                "zhizengzeng": "ZHIZENGZENG_API_KEY",
+                "zhizengzeng": "OPENCODER_LLM_API_KEY",
             }.get(self.backend, "API_KEY")
             raise RuntimeError(
                 f"Missing API key for backend={self.backend}. Set {key_name}."

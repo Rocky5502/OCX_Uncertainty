@@ -130,6 +130,16 @@ def test_offline_llm_backend_needs_no_api_key():
     assert resp.logprobs
 
 
+def test_compatible_backend_uses_neutral_api_key(monkeypatch):
+    monkeypatch.setenv("OPENCODER_LLM_BASE_URL", "https://example.invalid/v1")
+    monkeypatch.setenv("OPENCODER_LLM_API_KEY", "test-only-key")
+
+    client = LLMClient(backend="zhizengzeng", model="gpt-4o-mini")
+
+    assert client.api_key == "test-only-key"
+    assert client.endpoint == "https://example.invalid/v1/chat/completions"
+
+
 def test_config_and_standard_rag_baseline():
     cfg = PipelineConfig.from_yaml("configs/default.yaml")
     assert cfg.llm_temperature == 0.2

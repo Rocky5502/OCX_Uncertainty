@@ -22,6 +22,16 @@ OpenCoderX profiles repository knowledge, decomposes query uncertainty, retrieve
 
 A single confidence value cannot identify what is missing. OpenCoderX localizes risk to API knowledge, repository context, similar code, or generation, then converts that signal into an actionable collaboration decision.
 
+## Paper
+
+OpenCoderX extends the uncertainty-aware retrieval framework introduced in:
+
+> Chandan Kumar Sah, Li Zhang, and Xiaoli Lian. **Beyond "What to Retrieve": Uncertainty in Retrieval-Augmented Code Generation.** arXiv:2607.24884, 2026.
+
+[[arXiv](https://arxiv.org/abs/2607.24884)] [[PDF](https://arxiv.org/pdf/2607.24884)] [[DOI](https://doi.org/10.48550/arXiv.2607.24884)]
+
+The journal-first OpenCoderX study, *Knowing When to Ask: Uncertainty-Guided Human-AI Collaboration for Repository-Level Code Generation*, extends this foundation with four model families, cross-language evaluation, collaboration policies, and human and automated-reviewer protocols. Its archival link will be added when publicly available.
+
 ## Artifact At A Glance
 
 | Component | Released scope |
@@ -33,6 +43,17 @@ A single confidence value cannot identify what is missing. OpenCoderX localizes 
 | Automated reviewers | 12 gateway-mediated model configurations, 12 tasks each, 144 planned episodes |
 | Human study | Protocol, instruments, schemas, and local collection UI; no participant-level data |
 | Reproduction | Public task indexes, analysis records, integrity hashes, tables, figures, and audit scripts |
+
+## Datasets Used
+
+| Benchmark | Journal scope | Evaluation role | Official source |
+|---|---:|---|---|
+| RepoExec-inline | 32 tasks | Executable repository-level evaluation | [FSoft-AI4Code/RepoExec](https://github.com/FSoft-AI4Code/RepoExec) |
+| CoderEval API subset | 13 tasks | Repository API-set quality | [CoderEval/CoderEval](https://github.com/CoderEval/CoderEval) |
+| ExecRepoBench-120 | 120 tasks from 37 repositories | Main executable confirmatory evaluation | [CSJianYang/ExecRepoBench](https://huggingface.co/datasets/CSJianYang/ExecRepoBench) |
+| CrossCodeEval-100 | 100 tasks from 88 repositories | Native multilingual retrieval-transfer metrics | [amazon-science/cceval](https://github.com/amazon-science/cceval) |
+
+The repository releases source-free task identities, selection metadata, and hashes under [`data/manifests/`](data/manifests/). Source code, reference implementations, and tests must be obtained from the official benchmark distributions under their respective licenses. Multi-SWE-bench is not included because its official container evaluation was not completed in this environment.
 
 ## 1. File Structure
 
@@ -98,7 +119,33 @@ OPENCODER_LLM_BASE_URL=https://your-compatible-endpoint.example/v1
 OPENCODER_LLM_API_KEY=replace_locally
 ```
 
-The client also recognizes `ZHIZENGZENG_API_KEY` for compatibility with the frozen campaign. `.env` is ignored by Git. See [Configuration](docs/CONFIGURATION.md) for official-provider and gateway examples.
+The released runner uses the OpenAI-compatible chat-completions interface for
+the full four-family campaign. The configured endpoint must expose the exact
+requested model ID:
+
+| Family | Frozen model ID | Official model information |
+|---|---|---|
+| GPT | `gpt-4o-mini` | [OpenAI model documentation](https://developers.openai.com/api/docs/models/gpt-4o-mini) |
+| Gemini | `gemini-2.5-flash` | [Gemini API model documentation](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash) |
+| Claude | `claude-sonnet-5` | [Claude Sonnet 5 documentation](https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5) |
+| Qwen | `qwen3-coder-plus` | [Alibaba Cloud Model Studio documentation](https://help.aliyun.com/en/model-studio/qwen3-coder-plus) |
+
+Select a frozen model configuration, then preflight the endpoint before a paid
+run:
+
+```bash
+export OPENCODER_LLM_BACKEND=zhizengzeng
+export OPENCODER_LLM_MODEL=gpt-4o-mini  # or another frozen ID above
+python scripts/preflight_api.py --backend "$OPENCODER_LLM_BACKEND" \
+  --model "$OPENCODER_LLM_MODEL"
+```
+
+The backend label selects the released OpenAI-compatible transport; it does not
+claim a direct connection to any upstream model vendor. Direct OpenAI and
+Gemini calls are also supported with `OPENAI_API_KEY` or `GEMINI_API_KEY` and
+their corresponding backend. `.env` is ignored by Git. See
+[Configuration](docs/CONFIGURATION.md) for the complete setup and provenance
+requirements.
 
 ## 4. Example Dataset
 
@@ -242,7 +289,7 @@ Generated LaTeX tables are under `results/tosem/publication_tables/latex/`; vect
 
 ## Citation
 
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Please cite the archival paper associated with the artifact when its final bibliographic record is available. The repository contains no manuscript PDF.
+Citation metadata and the associated preprint citation are provided in [`CITATION.cff`](CITATION.cff). Please cite the paper and software artifact when using OpenCoderX. The repository contains no manuscript PDF.
 
 ## License And Third-Party Material
 

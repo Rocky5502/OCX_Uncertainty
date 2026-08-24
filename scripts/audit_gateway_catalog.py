@@ -45,9 +45,9 @@ def main() -> int:
     base = os.environ.get(
         "OPENCODER_LLM_BASE_URL", "https://api.zhizengzeng.com/v1"
     ).rstrip("/")
-    key = os.environ.get("ZHIZENGZENG_API_KEY", "")
+    key = os.environ.get("OPENCODER_LLM_API_KEY", "")
     if not key:
-        raise RuntimeError("ZHIZENGZENG_API_KEY is missing")
+        raise RuntimeError("OPENCODER_LLM_API_KEY is missing")
     response = requests.get(
         base + "/models",
         headers={"Authorization": f"Bearer {key}"},

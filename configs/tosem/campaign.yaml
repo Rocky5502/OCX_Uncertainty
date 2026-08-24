@@ -3,7 +3,7 @@ campaign:
   date_frozen: 2026-08-10
   gateway: zhizengzeng
   base_url_env: OPENCODER_LLM_BASE_URL
-  api_key_env: ZHIZENGZENG_API_KEY
+  api_key_env: OPENCODER_LLM_API_KEY
 
 models:
   - family: GPT

@@ -26,9 +26,11 @@ export OPENCODER_LLM_BACKEND=gemini
 export GEMINI_API_KEY=...
 export OPENCODER_LLM_MODEL=gemini-2.5-flash
 
-# ZhiZengZeng gateway, shared key for ChatGPT/Gemini-compatible models
-export OPENCODER_LLM_BASE_URL=https://api.zhizengzeng.com/v1
-export ZHIZENGZENG_API_KEY=...
+# OpenAI-compatible endpoint for the frozen four-family campaign
+export OPENCODER_LLM_BACKEND=zhizengzeng
+export OPENCODER_LLM_BASE_URL=https://your-compatible-endpoint.example/v1
+export OPENCODER_LLM_API_KEY=...
+export OPENCODER_LLM_MODEL=gpt-4o-mini
 ```
 
 OpenAI logprobs feed token-entropy uncertainty. Gemini uses the same
