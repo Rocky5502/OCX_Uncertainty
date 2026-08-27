@@ -32,7 +32,7 @@ A single confidence value cannot identify what is missing. OpenCoderX localizes 
 | Cross-language evaluation | CrossCodeEval-100 across Python, Java, TypeScript, and C# using native metrics |
 | API grounding | RepoExec and CoderEval task-level API-set audit records |
 | Automated reviewers | 12 gateway-mediated model configurations, 12 tasks each, 144 planned episodes |
-| Human study | Protocol, instruments, schemas, and local collection UI; no participant-level data |
+| Human study | Protocol, instruments, schemas, and local collection UI; no participant-level data published|
 | Reproduction | Public task indexes, analysis records, integrity hashes, tables, figures, and audit scripts |
 
 ## Datasets Used
