@@ -1,5 +1,5 @@
 # OpenCoderX
-
+## Knowing When to Ask: Uncertainty-Guided Human--AI Collaboration for Repository-Level Code Generation
 **Uncertainty-aware retrieval, generation, verification, and collaboration for repository-level code generation.**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB.svg)](https://www.python.org/)
