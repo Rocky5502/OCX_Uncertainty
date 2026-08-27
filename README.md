@@ -274,7 +274,6 @@ Generated LaTeX tables are under `results/tosem/publication_tables/latex/`; vect
 - The public technical records contain 1,920 ExecRepoBench task-method-model cells and 800 CrossCodeEval task-method-model cells.
 - Public automated-reviewer records contain 144 unique episodes: 134 executable and 10 missing.
 - Missing provider outputs are never silently counted as correct or incorrect; planned-denominator sensitivity is reported separately.
-- Multi-SWE-bench is not included because the official Docker evaluator was unavailable and no quantitative claim was made.
 - Provider updates may change future reruns; model IDs, hashes, prompts, seeds, and protocol amendments are frozen in the artifact.
 - Generated code can be incorrect or insecure. Run tests, static analysis, licensing review, and human review before deployment.
 
