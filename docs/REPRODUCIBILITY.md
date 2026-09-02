@@ -36,6 +36,6 @@ Run the preparation and leakage audits before generation. Do not tune frozen thr
 
 ## What The Public Artifact Reproduces
 
-The source-free records reproduce released aggregate tables, plots, intervals, sensitivity analyses, and integrity counts without requiring new model calls. They do not reproduce model text generation or third-party test execution without the official benchmark inputs.
+Committed source-free records reproduce the released aggregate tables, plots, intervals, and integrity counts associated with them. They do not reproduce model text generation or third-party test execution without the official benchmark inputs.
 
-Post-hoc analyses must remain explicitly separated from new generation runs: they may read only frozen task-level records and must preserve their seeds, bootstrap/masking settings, summaries, and integrity metadata in the corresponding `results/tosem/` analysis directory.
+Any additional manuscript-referenced post-hoc analysis must be released together with its runnable analysis script, minimal source-free frozen inputs (or an existing public input path), generated summaries, seeds, bootstrap/masking settings, figures/tables, provenance metadata, and integrity checks. Such analyses must make no new model calls and must not expose generated source code, private benchmark material, provider identifiers, credentials, or participant-level data.
