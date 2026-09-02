@@ -26,7 +26,11 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-analysis = ["matplotlib>=3.7"]
+analysis = [
+  "matplotlib>=3.7",
+  "statsmodels>=0.14,<0.15",
+  "jsonschema>=4.23,<5",
+]
 embeddings = ["torch>=2.0", "transformers>=4.40", "sentence-transformers>=2.2"]
 datasets = ["datasets>=2.14"]
 dev = ["pytest>=7", "ruff>=0.4"]
